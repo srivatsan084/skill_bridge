@@ -1,0 +1,508 @@
+﻿role,skill,postings_with_skill,total_role_postings,percentage
+AI Engineer,Machine Learning,29,40,72.5
+AI Engineer,Python,28,40,70.0
+AI Engineer,TensorFlow,20,40,50.0
+AI Engineer,Microsoft Azure,17,40,42.5
+AI Engineer,PyTorch,15,40,37.5
+AI Engineer,Deep Learning,12,40,30.0
+AI Engineer,AWS,9,40,22.5
+AI Engineer,Scikit-learn,9,40,22.5
+AI Engineer,CI/CD,8,40,20.0
+AI Engineer,Java,8,40,20.0
+AI Engineer,Git,7,40,17.5
+AI Engineer,SQL,6,40,15.0
+AI Engineer,C++,6,40,15.0
+AI Engineer,Google Cloud,4,40,10.0
+AI Engineer,Kubernetes,3,40,7.5
+AI Engineer,Docker,3,40,7.5
+AI Engineer,JavaScript,3,40,7.5
+AI Engineer,REST API,2,40,5.0
+AI Engineer,HTML,2,40,5.0
+AI Engineer,Redis,2,40,5.0
+AI Engineer,PostgreSQL,2,40,5.0
+AI Engineer,CSS,2,40,5.0
+AI Engineer,MongoDB,2,40,5.0
+AI Engineer,Pandas,1,40,2.5
+AI Engineer,NumPy,1,40,2.5
+AI Engineer,Hadoop,1,40,2.5
+AI Engineer,C#,1,40,2.5
+AI Engineer,.NET,1,40,2.5
+AI Engineer,Apache Spark,1,40,2.5
+AI Engineer,Node.js,1,40,2.5
+AI Engineer,React,1,40,2.5
+AI Engineer,Firebase,1,40,2.5
+AI Engineer,Vue.js,1,40,2.5
+Backend Developer,Java,137,243,56.38
+Backend Developer,Python,131,243,53.91
+Backend Developer,SQL,118,243,48.56
+Backend Developer,AWS,116,243,47.74
+Backend Developer,JavaScript,105,243,43.21
+Backend Developer,Kubernetes,80,243,32.92
+Backend Developer,Docker,77,243,31.69
+Backend Developer,Microsoft Azure,74,243,30.45
+Backend Developer,Node.js,63,243,25.93
+Backend Developer,Google Cloud,63,243,25.93
+Backend Developer,C++,56,243,23.05
+Backend Developer,C#,52,243,21.4
+Backend Developer,CI/CD,47,243,19.34
+Backend Developer,HTML,43,243,17.7
+Backend Developer,REST API,32,243,13.17
+Backend Developer,PostgreSQL,30,243,12.35
+Backend Developer,React,24,243,9.88
+Backend Developer,Git,23,243,9.47
+Backend Developer,TypeScript,21,243,8.64
+Backend Developer,MySQL,17,243,7.0
+Backend Developer,Machine Learning,15,243,6.17
+Backend Developer,Jenkins,13,243,5.35
+Backend Developer,Redis,13,243,5.35
+Backend Developer,GraphQL,12,243,4.94
+Backend Developer,Ruby,12,243,4.94
+Backend Developer,Kotlin,12,243,4.94
+Backend Developer,MongoDB,11,243,4.53
+Backend Developer,CSS,10,243,4.12
+Backend Developer,Jest,9,243,3.7
+Backend Developer,.NET,9,243,3.7
+Backend Developer,Angular,9,243,3.7
+Backend Developer,PHP,7,243,2.88
+Backend Developer,Express.js,7,243,2.88
+Backend Developer,Linux,7,243,2.88
+Backend Developer,Vue.js,6,243,2.47
+Backend Developer,Hadoop,6,243,2.47
+Backend Developer,Apache Spark,3,243,1.23
+Backend Developer,JUnit,3,243,1.23
+Backend Developer,React Native,2,243,0.82
+Backend Developer,Cypress,2,243,0.82
+Backend Developer,Tailwind CSS,1,243,0.41
+Backend Developer,Next.js,1,243,0.41
+Backend Developer,Playwright,1,243,0.41
+Backend Developer,Selenium,1,243,0.41
+Data Analyst,SQL,268,434,61.75
+Data Analyst,Python,149,434,34.33
+Data Analyst,Machine Learning,57,434,13.13
+Data Analyst,JavaScript,45,434,10.37
+Data Analyst,HTML,43,434,9.91
+Data Analyst,C++,41,434,9.45
+Data Analyst,C#,38,434,8.76
+Data Analyst,AWS,35,434,8.06
+Data Analyst,Microsoft Azure,21,434,4.84
+Data Analyst,.NET,11,434,2.53
+Data Analyst,Java,11,434,2.53
+Data Analyst,Hadoop,10,434,2.3
+Data Analyst,Google Cloud,9,434,2.07
+Data Analyst,Git,7,434,1.61
+Data Analyst,PostgreSQL,6,434,1.38
+Data Analyst,Apache Spark,3,434,0.69
+Data Analyst,NumPy,3,434,0.69
+Data Analyst,Kubernetes,3,434,0.69
+Data Analyst,Docker,3,434,0.69
+Data Analyst,CI/CD,3,434,0.69
+Data Analyst,MySQL,3,434,0.69
+Data Analyst,CSS,2,434,0.46
+Data Analyst,Pandas,2,434,0.46
+Data Analyst,Scikit-learn,2,434,0.46
+Data Analyst,TensorFlow,1,434,0.23
+Data Analyst,Deep Learning,1,434,0.23
+Data Analyst,PyTorch,1,434,0.23
+Data Analyst,Swift,1,434,0.23
+Data Analyst,Ruby,1,434,0.23
+Data Analyst,TypeScript,1,434,0.23
+Data Analyst,MongoDB,1,434,0.23
+Data Analyst,Redis,1,434,0.23
+Data Analyst,JUnit,1,434,0.23
+Data Scientist,Python,281,347,80.98
+Data Scientist,Machine Learning,224,347,64.55
+Data Scientist,SQL,199,347,57.35
+Data Scientist,AWS,86,347,24.78
+Data Scientist,Deep Learning,62,347,17.87
+Data Scientist,PyTorch,47,347,13.54
+Data Scientist,Google Cloud,44,347,12.68
+Data Scientist,TensorFlow,40,347,11.53
+Data Scientist,Microsoft Azure,36,347,10.37
+Data Scientist,Hadoop,32,347,9.22
+Data Scientist,Scikit-learn,28,347,8.07
+Data Scientist,Java,27,347,7.78
+Data Scientist,Docker,26,347,7.49
+Data Scientist,Pandas,23,347,6.63
+Data Scientist,Apache Spark,21,347,6.05
+Data Scientist,C++,20,347,5.76
+Data Scientist,Linux,19,347,5.48
+Data Scientist,JavaScript,19,347,5.48
+Data Scientist,Git,18,347,5.19
+Data Scientist,NumPy,17,347,4.9
+Data Scientist,Kubernetes,16,347,4.61
+Data Scientist,CI/CD,15,347,4.32
+Data Scientist,HTML,11,347,3.17
+Data Scientist,Jenkins,9,347,2.59
+Data Scientist,REST API,8,347,2.31
+Data Scientist,PostgreSQL,7,347,2.02
+Data Scientist,MySQL,7,347,2.02
+Data Scientist,MongoDB,4,347,1.15
+Data Scientist,C#,3,347,0.86
+Data Scientist,CSS,3,347,0.86
+Data Scientist,React,2,347,0.58
+Data Scientist,Express.js,2,347,0.58
+Data Scientist,Swift,2,347,0.58
+Data Scientist,GraphQL,1,347,0.29
+Data Scientist,Next.js,1,347,0.29
+Data Scientist,Node.js,1,347,0.29
+Data Scientist,TypeScript,1,347,0.29
+Data Scientist,Bootstrap,1,347,0.29
+Data Scientist,PHP,1,347,0.29
+Data Scientist,Redis,1,347,0.29
+Data Scientist,Ruby,1,347,0.29
+DevOps Engineer,CI/CD,215,357,60.22
+DevOps Engineer,Python,180,357,50.42
+DevOps Engineer,AWS,177,357,49.58
+DevOps Engineer,Kubernetes,162,357,45.38
+DevOps Engineer,Microsoft Azure,146,357,40.9
+DevOps Engineer,Docker,134,357,37.54
+DevOps Engineer,Linux,124,357,34.73
+DevOps Engineer,Jenkins,117,357,32.77
+DevOps Engineer,Java,83,357,23.25
+DevOps Engineer,Git,77,357,21.57
+DevOps Engineer,Google Cloud,74,357,20.73
+DevOps Engineer,SQL,58,357,16.25
+DevOps Engineer,JavaScript,39,357,10.92
+DevOps Engineer,C#,27,357,7.56
+DevOps Engineer,.NET,23,357,6.44
+DevOps Engineer,MongoDB,20,357,5.6
+DevOps Engineer,Redis,18,357,5.04
+DevOps Engineer,Node.js,16,357,4.48
+DevOps Engineer,Angular,15,357,4.2
+DevOps Engineer,Ruby,15,357,4.2
+DevOps Engineer,MySQL,13,357,3.64
+DevOps Engineer,PostgreSQL,13,357,3.64
+DevOps Engineer,C++,13,357,3.64
+DevOps Engineer,React,13,357,3.64
+DevOps Engineer,REST API,12,357,3.36
+DevOps Engineer,Machine Learning,12,357,3.36
+DevOps Engineer,PHP,10,357,2.8
+DevOps Engineer,Hadoop,9,357,2.52
+DevOps Engineer,TypeScript,7,357,1.96
+DevOps Engineer,Express.js,6,357,1.68
+DevOps Engineer,Swift,4,357,1.12
+DevOps Engineer,GraphQL,3,357,0.84
+DevOps Engineer,JUnit,2,357,0.56
+DevOps Engineer,Selenium,2,357,0.56
+DevOps Engineer,Firebase,2,357,0.56
+DevOps Engineer,Apache Spark,2,357,0.56
+DevOps Engineer,Vue.js,2,357,0.56
+DevOps Engineer,CSS,1,357,0.28
+DevOps Engineer,NumPy,1,357,0.28
+DevOps Engineer,HTML,1,357,0.28
+DevOps Engineer,Deep Learning,1,357,0.28
+Frontend Developer,JavaScript,128,263,48.67
+Frontend Developer,HTML,114,263,43.35
+Frontend Developer,React,77,263,29.28
+Frontend Developer,CSS,68,263,25.86
+Frontend Developer,SQL,49,263,18.63
+Frontend Developer,Python,45,263,17.11
+Frontend Developer,TypeScript,44,263,16.73
+Frontend Developer,C#,44,263,16.73
+Frontend Developer,AWS,42,263,15.97
+Frontend Developer,Angular,42,263,15.97
+Frontend Developer,C++,35,263,13.31
+Frontend Developer,Git,27,263,10.27
+Frontend Developer,Node.js,25,263,9.51
+Frontend Developer,CI/CD,25,263,9.51
+Frontend Developer,Java,24,263,9.13
+Frontend Developer,Kubernetes,18,263,6.84
+Frontend Developer,Microsoft Azure,18,263,6.84
+Frontend Developer,Vue.js,17,263,6.46
+Frontend Developer,Docker,16,263,6.08
+Frontend Developer,Jenkins,15,263,5.7
+Frontend Developer,REST API,14,263,5.32
+Frontend Developer,Linux,12,263,4.56
+Frontend Developer,Bootstrap,12,263,4.56
+Frontend Developer,.NET,12,263,4.56
+Frontend Developer,Google Cloud,11,263,4.18
+Frontend Developer,Jest,10,263,3.8
+Frontend Developer,PostgreSQL,9,263,3.42
+Frontend Developer,Ruby,8,263,3.04
+Frontend Developer,Next.js,8,263,3.04
+Frontend Developer,Express.js,7,263,2.66
+Frontend Developer,PHP,6,263,2.28
+Frontend Developer,React Native,4,263,1.52
+Frontend Developer,Tailwind CSS,4,263,1.52
+Frontend Developer,GraphQL,4,263,1.52
+Frontend Developer,Cypress,4,263,1.52
+Frontend Developer,MySQL,3,263,1.14
+Frontend Developer,MongoDB,3,263,1.14
+Frontend Developer,Redis,3,263,1.14
+Frontend Developer,Hadoop,2,263,0.76
+Frontend Developer,Playwright,1,263,0.38
+Frontend Developer,JUnit,1,263,0.38
+Frontend Developer,Machine Learning,1,263,0.38
+Frontend Developer,Selenium,1,263,0.38
+Frontend Developer,Flutter,1,263,0.38
+Frontend Developer,Swift,1,263,0.38
+Full Stack Developer,JavaScript,271,420,64.52
+Full Stack Developer,Java,225,420,53.57
+Full Stack Developer,AWS,194,420,46.19
+Full Stack Developer,React,190,420,45.24
+Full Stack Developer,SQL,168,420,40.0
+Full Stack Developer,CSS,140,420,33.33
+Full Stack Developer,HTML,134,420,31.9
+Full Stack Developer,Angular,134,420,31.9
+Full Stack Developer,Python,132,420,31.43
+Full Stack Developer,TypeScript,130,420,30.95
+Full Stack Developer,Microsoft Azure,123,420,29.29
+Full Stack Developer,CI/CD,120,420,28.57
+Full Stack Developer,Docker,110,420,26.19
+Full Stack Developer,Kubernetes,104,420,24.76
+Full Stack Developer,Node.js,98,420,23.33
+Full Stack Developer,Git,88,420,20.95
+Full Stack Developer,Google Cloud,79,420,18.81
+Full Stack Developer,.NET,76,420,18.1
+Full Stack Developer,REST API,70,420,16.67
+Full Stack Developer,C#,54,420,12.86
+Full Stack Developer,Jenkins,50,420,11.9
+Full Stack Developer,PostgreSQL,49,420,11.67
+Full Stack Developer,MySQL,39,420,9.29
+Full Stack Developer,Vue.js,34,420,8.1
+Full Stack Developer,MongoDB,31,420,7.38
+Full Stack Developer,Machine Learning,29,420,6.9
+Full Stack Developer,PHP,28,420,6.67
+Full Stack Developer,Express.js,25,420,5.95
+Full Stack Developer,Linux,22,420,5.24
+Full Stack Developer,C++,21,420,5.0
+Full Stack Developer,Ruby,20,420,4.76
+Full Stack Developer,GraphQL,20,420,4.76
+Full Stack Developer,JUnit,18,420,4.29
+Full Stack Developer,Bootstrap,13,420,3.1
+Full Stack Developer,Jest,12,420,2.86
+Full Stack Developer,Selenium,12,420,2.86
+Full Stack Developer,Next.js,10,420,2.38
+Full Stack Developer,React Native,10,420,2.38
+Full Stack Developer,Redis,10,420,2.38
+Full Stack Developer,Swift,9,420,2.14
+Full Stack Developer,Cypress,8,420,1.9
+Full Stack Developer,Kotlin,7,420,1.67
+Full Stack Developer,Apache Spark,4,420,0.95
+Full Stack Developer,Flutter,3,420,0.71
+Full Stack Developer,Playwright,3,420,0.71
+Full Stack Developer,Hadoop,3,420,0.71
+Full Stack Developer,Tailwind CSS,3,420,0.71
+Full Stack Developer,TensorFlow,1,420,0.24
+Full Stack Developer,Deep Learning,1,420,0.24
+Full Stack Developer,PyTorch,1,420,0.24
+Full Stack Developer,Firebase,1,420,0.24
+Java Developer,Java,165,165,100.0
+Java Developer,SQL,57,165,34.55
+Java Developer,AWS,48,165,29.09
+Java Developer,REST API,38,165,23.03
+Java Developer,Git,38,165,23.03
+Java Developer,CI/CD,35,165,21.21
+Java Developer,Kubernetes,34,165,20.61
+Java Developer,JavaScript,33,165,20.0
+Java Developer,Jenkins,29,165,17.58
+Java Developer,Angular,24,165,14.55
+Java Developer,Docker,23,165,13.94
+Java Developer,Python,21,165,12.73
+Java Developer,Microsoft Azure,20,165,12.12
+Java Developer,JUnit,18,165,10.91
+Java Developer,React,16,165,9.7
+Java Developer,HTML,15,165,9.09
+Java Developer,CSS,14,165,8.48
+Java Developer,MongoDB,14,165,8.48
+Java Developer,PostgreSQL,12,165,7.27
+Java Developer,Linux,12,165,7.27
+Java Developer,Redis,9,165,5.45
+Java Developer,Node.js,8,165,4.85
+Java Developer,Google Cloud,8,165,4.85
+Java Developer,.NET,6,165,3.64
+Java Developer,MySQL,5,165,3.03
+Java Developer,Hadoop,4,165,2.42
+Java Developer,TypeScript,3,165,1.82
+Java Developer,C#,3,165,1.82
+Java Developer,Bootstrap,2,165,1.21
+Java Developer,Swift,2,165,1.21
+Java Developer,Machine Learning,2,165,1.21
+Java Developer,Kotlin,2,165,1.21
+Java Developer,Vue.js,2,165,1.21
+Java Developer,Selenium,2,165,1.21
+Java Developer,GraphQL,1,165,0.61
+Java Developer,Ruby,1,165,0.61
+Java Developer,Flutter,1,165,0.61
+Machine Learning Engineer,Machine Learning,94,96,97.92
+Machine Learning Engineer,Python,81,96,84.38
+Machine Learning Engineer,TensorFlow,41,96,42.71
+Machine Learning Engineer,PyTorch,41,96,42.71
+Machine Learning Engineer,Deep Learning,36,96,37.5
+Machine Learning Engineer,AWS,27,96,28.12
+Machine Learning Engineer,Java,25,96,26.04
+Machine Learning Engineer,Microsoft Azure,21,96,21.88
+Machine Learning Engineer,Google Cloud,19,96,19.79
+Machine Learning Engineer,C++,19,96,19.79
+Machine Learning Engineer,SQL,19,96,19.79
+Machine Learning Engineer,Scikit-learn,16,96,16.67
+Machine Learning Engineer,Kubernetes,16,96,16.67
+Machine Learning Engineer,CI/CD,13,96,13.54
+Machine Learning Engineer,Docker,12,96,12.5
+Machine Learning Engineer,Pandas,10,96,10.42
+Machine Learning Engineer,NumPy,9,96,9.38
+Machine Learning Engineer,Hadoop,8,96,8.33
+Machine Learning Engineer,Node.js,6,96,6.25
+Machine Learning Engineer,Apache Spark,5,96,5.21
+Machine Learning Engineer,Git,5,96,5.21
+Machine Learning Engineer,Express.js,4,96,4.17
+Machine Learning Engineer,Linux,4,96,4.17
+Machine Learning Engineer,Jenkins,3,96,3.12
+Machine Learning Engineer,C#,3,96,3.12
+Machine Learning Engineer,MongoDB,3,96,3.12
+Machine Learning Engineer,MySQL,1,96,1.04
+Mobile Developer,Swift,26,66,39.39
+Mobile Developer,Java,25,66,37.88
+Mobile Developer,Kotlin,23,66,34.85
+Mobile Developer,CI/CD,20,66,30.3
+Mobile Developer,Git,16,66,24.24
+Mobile Developer,REST API,15,66,22.73
+Mobile Developer,AWS,14,66,21.21
+Mobile Developer,React,12,66,18.18
+Mobile Developer,React Native,10,66,15.15
+Mobile Developer,JavaScript,7,66,10.61
+Mobile Developer,Jenkins,6,66,9.09
+Mobile Developer,.NET,5,66,7.58
+Mobile Developer,Flutter,5,66,7.58
+Mobile Developer,Python,4,66,6.06
+Mobile Developer,C++,4,66,6.06
+Mobile Developer,C#,3,66,4.55
+Mobile Developer,HTML,3,66,4.55
+Mobile Developer,Firebase,2,66,3.03
+Mobile Developer,Google Cloud,2,66,3.03
+Mobile Developer,MySQL,2,66,3.03
+Mobile Developer,Linux,2,66,3.03
+Mobile Developer,Node.js,2,66,3.03
+Mobile Developer,Angular,2,66,3.03
+Mobile Developer,SQL,2,66,3.03
+Mobile Developer,GraphQL,2,66,3.03
+Mobile Developer,Express.js,1,66,1.52
+Mobile Developer,Microsoft Azure,1,66,1.52
+Mobile Developer,Docker,1,66,1.52
+Mobile Developer,PostgreSQL,1,66,1.52
+Mobile Developer,CSS,1,66,1.52
+Python Developer,Python,69,69,100.0
+Python Developer,AWS,26,69,37.68
+Python Developer,SQL,22,69,31.88
+Python Developer,Git,16,69,23.19
+Python Developer,JavaScript,15,69,21.74
+Python Developer,CI/CD,14,69,20.29
+Python Developer,REST API,12,69,17.39
+Python Developer,Docker,11,69,15.94
+Python Developer,Microsoft Azure,10,69,14.49
+Python Developer,HTML,10,69,14.49
+Python Developer,Kubernetes,8,69,11.59
+Python Developer,CSS,8,69,11.59
+Python Developer,Jenkins,8,69,11.59
+Python Developer,Machine Learning,7,69,10.14
+Python Developer,NumPy,7,69,10.14
+Python Developer,Java,7,69,10.14
+Python Developer,Linux,7,69,10.14
+Python Developer,React,6,69,8.7
+Python Developer,Angular,6,69,8.7
+Python Developer,MySQL,5,69,7.25
+Python Developer,PostgreSQL,5,69,7.25
+Python Developer,MongoDB,5,69,7.25
+Python Developer,Pandas,5,69,7.25
+Python Developer,Deep Learning,5,69,7.25
+Python Developer,Google Cloud,4,69,5.8
+Python Developer,.NET,3,69,4.35
+Python Developer,Apache Spark,2,69,2.9
+Python Developer,PyTorch,2,69,2.9
+Python Developer,Ruby,1,69,1.45
+Python Developer,Redis,1,69,1.45
+Python Developer,Next.js,1,69,1.45
+Python Developer,Scikit-learn,1,69,1.45
+Python Developer,Node.js,1,69,1.45
+Python Developer,C++,1,69,1.45
+Python Developer,TypeScript,1,69,1.45
+Python Developer,Cypress,1,69,1.45
+Python Developer,TensorFlow,1,69,1.45
+Python Developer,Vue.js,1,69,1.45
+QA Automation Engineer,Java,18,33,54.55
+QA Automation Engineer,Selenium,17,33,51.52
+QA Automation Engineer,Python,13,33,39.39
+QA Automation Engineer,SQL,8,33,24.24
+QA Automation Engineer,Jenkins,8,33,24.24
+QA Automation Engineer,AWS,7,33,21.21
+QA Automation Engineer,CI/CD,6,33,18.18
+QA Automation Engineer,JavaScript,4,33,12.12
+QA Automation Engineer,Linux,3,33,9.09
+QA Automation Engineer,Playwright,3,33,9.09
+QA Automation Engineer,.NET,3,33,9.09
+QA Automation Engineer,GraphQL,2,33,6.06
+QA Automation Engineer,C#,2,33,6.06
+QA Automation Engineer,HTML,2,33,6.06
+QA Automation Engineer,Git,2,33,6.06
+QA Automation Engineer,Google Cloud,2,33,6.06
+QA Automation Engineer,REST API,2,33,6.06
+QA Automation Engineer,Docker,2,33,6.06
+QA Automation Engineer,React,2,33,6.06
+QA Automation Engineer,Microsoft Azure,2,33,6.06
+QA Automation Engineer,Cypress,2,33,6.06
+QA Automation Engineer,CSS,1,33,3.03
+QA Automation Engineer,Ruby,1,33,3.03
+QA Automation Engineer,Kubernetes,1,33,3.03
+QA Automation Engineer,C++,1,33,3.03
+QA Automation Engineer,Angular,1,33,3.03
+QA Automation Engineer,TypeScript,1,33,3.03
+QA Automation Engineer,JUnit,1,33,3.03
+QA Automation Engineer,Jest,1,33,3.03
+QA Automation Engineer,React Native,1,33,3.03
+QA Automation Engineer,Kotlin,1,33,3.03
+QA Automation Engineer,Swift,1,33,3.03
+QA Automation Engineer,Express.js,1,33,3.03
+Software Engineer,Python,468,1271,36.82
+Software Engineer,Java,465,1271,36.59
+Software Engineer,JavaScript,420,1271,33.04
+Software Engineer,SQL,403,1271,31.71
+Software Engineer,C++,351,1271,27.62
+Software Engineer,AWS,303,1271,23.84
+Software Engineer,C#,277,1271,21.79
+Software Engineer,CI/CD,258,1271,20.3
+Software Engineer,Microsoft Azure,227,1271,17.86
+Software Engineer,HTML,217,1271,17.07
+Software Engineer,Git,208,1271,16.37
+Software Engineer,React,195,1271,15.34
+Software Engineer,Linux,183,1271,14.4
+Software Engineer,.NET,179,1271,14.08
+Software Engineer,Kubernetes,168,1271,13.22
+Software Engineer,Docker,158,1271,12.43
+Software Engineer,TypeScript,146,1271,11.49
+Software Engineer,CSS,129,1271,10.15
+Software Engineer,Angular,127,1271,9.99
+Software Engineer,Google Cloud,121,1271,9.52
+Software Engineer,REST API,114,1271,8.97
+Software Engineer,Jenkins,107,1271,8.42
+Software Engineer,Machine Learning,106,1271,8.34
+Software Engineer,Node.js,102,1271,8.03
+Software Engineer,PostgreSQL,81,1271,6.37
+Software Engineer,MySQL,59,1271,4.64
+Software Engineer,Kotlin,46,1271,3.62
+Software Engineer,MongoDB,43,1271,3.38
+Software Engineer,Selenium,38,1271,2.99
+Software Engineer,GraphQL,36,1271,2.83
+Software Engineer,Swift,36,1271,2.83
+Software Engineer,Redis,35,1271,2.75
+Software Engineer,JUnit,34,1271,2.68
+Software Engineer,Ruby,32,1271,2.52
+Software Engineer,PyTorch,28,1271,2.2
+Software Engineer,Express.js,28,1271,2.2
+Software Engineer,PHP,25,1271,1.97
+Software Engineer,Bootstrap,24,1271,1.89
+Software Engineer,TensorFlow,24,1271,1.89
+Software Engineer,Vue.js,23,1271,1.81
+Software Engineer,Hadoop,18,1271,1.42
+Software Engineer,Deep Learning,16,1271,1.26
+Software Engineer,React Native,14,1271,1.1
+Software Engineer,Cypress,14,1271,1.1
+Software Engineer,Next.js,11,1271,0.87
+Software Engineer,Apache Spark,11,1271,0.87
+Software Engineer,Playwright,10,1271,0.79
+Software Engineer,Jest,9,1271,0.71
+Software Engineer,Scikit-learn,9,1271,0.71
+Software Engineer,NumPy,6,1271,0.47
+Software Engineer,Pandas,6,1271,0.47
+Software Engineer,Tailwind CSS,4,1271,0.31
+Software Engineer,Flutter,4,1271,0.31
+Software Engineer,Firebase,2,1271,0.16

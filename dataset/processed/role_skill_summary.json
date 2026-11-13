@@ -1,0 +1,3574 @@
+{
+    "source": "Kaggle LinkedIn Job Postings Dataset",
+    "source_file": "dataset/raw/postings.csv",
+    "processed_at": "2026-11-13T12:38:18.052024",
+    "total_rows_read": 123849,
+    "relevant_unique_postings": 3804,
+    "skipped_rows": 0,
+    "role_posting_counts": {
+        "Software Engineer": 1271,
+        "Full Stack Developer": 420,
+        "Frontend Developer": 263,
+        "Java Developer": 165,
+        "Backend Developer": 243,
+        "AI Engineer": 40,
+        "Data Scientist": 347,
+        "Data Analyst": 434,
+        "Mobile Developer": 66,
+        "DevOps Engineer": 357,
+        "QA Automation Engineer": 33,
+        "Machine Learning Engineer": 96,
+        "Python Developer": 69
+    },
+    "skill_results": [
+        {
+            "role": "AI Engineer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 29,
+            "total_role_postings": 40,
+            "percentage": 72.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Python",
+            "postings_with_skill": 28,
+            "total_role_postings": 40,
+            "percentage": 70.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "TensorFlow",
+            "postings_with_skill": 20,
+            "total_role_postings": 40,
+            "percentage": 50.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 17,
+            "total_role_postings": 40,
+            "percentage": 42.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "PyTorch",
+            "postings_with_skill": 15,
+            "total_role_postings": 40,
+            "percentage": 37.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Deep Learning",
+            "postings_with_skill": 12,
+            "total_role_postings": 40,
+            "percentage": 30.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "AWS",
+            "postings_with_skill": 9,
+            "total_role_postings": 40,
+            "percentage": 22.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Scikit-learn",
+            "postings_with_skill": 9,
+            "total_role_postings": 40,
+            "percentage": 22.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "CI/CD",
+            "postings_with_skill": 8,
+            "total_role_postings": 40,
+            "percentage": 20.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Java",
+            "postings_with_skill": 8,
+            "total_role_postings": 40,
+            "percentage": 20.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Git",
+            "postings_with_skill": 7,
+            "total_role_postings": 40,
+            "percentage": 17.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "SQL",
+            "postings_with_skill": 6,
+            "total_role_postings": 40,
+            "percentage": 15.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "C++",
+            "postings_with_skill": 6,
+            "total_role_postings": 40,
+            "percentage": 15.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 4,
+            "total_role_postings": 40,
+            "percentage": 10.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 3,
+            "total_role_postings": 40,
+            "percentage": 7.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Docker",
+            "postings_with_skill": 3,
+            "total_role_postings": 40,
+            "percentage": 7.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "JavaScript",
+            "postings_with_skill": 3,
+            "total_role_postings": 40,
+            "percentage": 7.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "REST API",
+            "postings_with_skill": 2,
+            "total_role_postings": 40,
+            "percentage": 5.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "HTML",
+            "postings_with_skill": 2,
+            "total_role_postings": 40,
+            "percentage": 5.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Redis",
+            "postings_with_skill": 2,
+            "total_role_postings": 40,
+            "percentage": 5.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 2,
+            "total_role_postings": 40,
+            "percentage": 5.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "CSS",
+            "postings_with_skill": 2,
+            "total_role_postings": 40,
+            "percentage": 5.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "MongoDB",
+            "postings_with_skill": 2,
+            "total_role_postings": 40,
+            "percentage": 5.0
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Pandas",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "NumPy",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Hadoop",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "C#",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": ".NET",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Apache Spark",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Node.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "React",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Firebase",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "AI Engineer",
+            "skill": "Vue.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 40,
+            "percentage": 2.5
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Java",
+            "postings_with_skill": 137,
+            "total_role_postings": 243,
+            "percentage": 56.38
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Python",
+            "postings_with_skill": 131,
+            "total_role_postings": 243,
+            "percentage": 53.91
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "SQL",
+            "postings_with_skill": 118,
+            "total_role_postings": 243,
+            "percentage": 48.56
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "AWS",
+            "postings_with_skill": 116,
+            "total_role_postings": 243,
+            "percentage": 47.74
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "JavaScript",
+            "postings_with_skill": 105,
+            "total_role_postings": 243,
+            "percentage": 43.21
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 80,
+            "total_role_postings": 243,
+            "percentage": 32.92
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Docker",
+            "postings_with_skill": 77,
+            "total_role_postings": 243,
+            "percentage": 31.69
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 74,
+            "total_role_postings": 243,
+            "percentage": 30.45
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Node.js",
+            "postings_with_skill": 63,
+            "total_role_postings": 243,
+            "percentage": 25.93
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 63,
+            "total_role_postings": 243,
+            "percentage": 25.93
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "C++",
+            "postings_with_skill": 56,
+            "total_role_postings": 243,
+            "percentage": 23.05
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "C#",
+            "postings_with_skill": 52,
+            "total_role_postings": 243,
+            "percentage": 21.4
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "CI/CD",
+            "postings_with_skill": 47,
+            "total_role_postings": 243,
+            "percentage": 19.34
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "HTML",
+            "postings_with_skill": 43,
+            "total_role_postings": 243,
+            "percentage": 17.7
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "REST API",
+            "postings_with_skill": 32,
+            "total_role_postings": 243,
+            "percentage": 13.17
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 30,
+            "total_role_postings": 243,
+            "percentage": 12.35
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "React",
+            "postings_with_skill": 24,
+            "total_role_postings": 243,
+            "percentage": 9.88
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Git",
+            "postings_with_skill": 23,
+            "total_role_postings": 243,
+            "percentage": 9.47
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "TypeScript",
+            "postings_with_skill": 21,
+            "total_role_postings": 243,
+            "percentage": 8.64
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "MySQL",
+            "postings_with_skill": 17,
+            "total_role_postings": 243,
+            "percentage": 7.0
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 15,
+            "total_role_postings": 243,
+            "percentage": 6.17
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Jenkins",
+            "postings_with_skill": 13,
+            "total_role_postings": 243,
+            "percentage": 5.35
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Redis",
+            "postings_with_skill": 13,
+            "total_role_postings": 243,
+            "percentage": 5.35
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "GraphQL",
+            "postings_with_skill": 12,
+            "total_role_postings": 243,
+            "percentage": 4.94
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Ruby",
+            "postings_with_skill": 12,
+            "total_role_postings": 243,
+            "percentage": 4.94
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Kotlin",
+            "postings_with_skill": 12,
+            "total_role_postings": 243,
+            "percentage": 4.94
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "MongoDB",
+            "postings_with_skill": 11,
+            "total_role_postings": 243,
+            "percentage": 4.53
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "CSS",
+            "postings_with_skill": 10,
+            "total_role_postings": 243,
+            "percentage": 4.12
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Jest",
+            "postings_with_skill": 9,
+            "total_role_postings": 243,
+            "percentage": 3.7
+        },
+        {
+            "role": "Backend Developer",
+            "skill": ".NET",
+            "postings_with_skill": 9,
+            "total_role_postings": 243,
+            "percentage": 3.7
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Angular",
+            "postings_with_skill": 9,
+            "total_role_postings": 243,
+            "percentage": 3.7
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "PHP",
+            "postings_with_skill": 7,
+            "total_role_postings": 243,
+            "percentage": 2.88
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Express.js",
+            "postings_with_skill": 7,
+            "total_role_postings": 243,
+            "percentage": 2.88
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Linux",
+            "postings_with_skill": 7,
+            "total_role_postings": 243,
+            "percentage": 2.88
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Vue.js",
+            "postings_with_skill": 6,
+            "total_role_postings": 243,
+            "percentage": 2.47
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Hadoop",
+            "postings_with_skill": 6,
+            "total_role_postings": 243,
+            "percentage": 2.47
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Apache Spark",
+            "postings_with_skill": 3,
+            "total_role_postings": 243,
+            "percentage": 1.23
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "JUnit",
+            "postings_with_skill": 3,
+            "total_role_postings": 243,
+            "percentage": 1.23
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "React Native",
+            "postings_with_skill": 2,
+            "total_role_postings": 243,
+            "percentage": 0.82
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Cypress",
+            "postings_with_skill": 2,
+            "total_role_postings": 243,
+            "percentage": 0.82
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Tailwind CSS",
+            "postings_with_skill": 1,
+            "total_role_postings": 243,
+            "percentage": 0.41
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Next.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 243,
+            "percentage": 0.41
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Playwright",
+            "postings_with_skill": 1,
+            "total_role_postings": 243,
+            "percentage": 0.41
+        },
+        {
+            "role": "Backend Developer",
+            "skill": "Selenium",
+            "postings_with_skill": 1,
+            "total_role_postings": 243,
+            "percentage": 0.41
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "SQL",
+            "postings_with_skill": 268,
+            "total_role_postings": 434,
+            "percentage": 61.75
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Python",
+            "postings_with_skill": 149,
+            "total_role_postings": 434,
+            "percentage": 34.33
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Machine Learning",
+            "postings_with_skill": 57,
+            "total_role_postings": 434,
+            "percentage": 13.13
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "JavaScript",
+            "postings_with_skill": 45,
+            "total_role_postings": 434,
+            "percentage": 10.37
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "HTML",
+            "postings_with_skill": 43,
+            "total_role_postings": 434,
+            "percentage": 9.91
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "C++",
+            "postings_with_skill": 41,
+            "total_role_postings": 434,
+            "percentage": 9.45
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "C#",
+            "postings_with_skill": 38,
+            "total_role_postings": 434,
+            "percentage": 8.76
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "AWS",
+            "postings_with_skill": 35,
+            "total_role_postings": 434,
+            "percentage": 8.06
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 21,
+            "total_role_postings": 434,
+            "percentage": 4.84
+        },
+        {
+            "role": "Data Analyst",
+            "skill": ".NET",
+            "postings_with_skill": 11,
+            "total_role_postings": 434,
+            "percentage": 2.53
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Java",
+            "postings_with_skill": 11,
+            "total_role_postings": 434,
+            "percentage": 2.53
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Hadoop",
+            "postings_with_skill": 10,
+            "total_role_postings": 434,
+            "percentage": 2.3
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Google Cloud",
+            "postings_with_skill": 9,
+            "total_role_postings": 434,
+            "percentage": 2.07
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Git",
+            "postings_with_skill": 7,
+            "total_role_postings": 434,
+            "percentage": 1.61
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 6,
+            "total_role_postings": 434,
+            "percentage": 1.38
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Apache Spark",
+            "postings_with_skill": 3,
+            "total_role_postings": 434,
+            "percentage": 0.69
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "NumPy",
+            "postings_with_skill": 3,
+            "total_role_postings": 434,
+            "percentage": 0.69
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Kubernetes",
+            "postings_with_skill": 3,
+            "total_role_postings": 434,
+            "percentage": 0.69
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Docker",
+            "postings_with_skill": 3,
+            "total_role_postings": 434,
+            "percentage": 0.69
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "CI/CD",
+            "postings_with_skill": 3,
+            "total_role_postings": 434,
+            "percentage": 0.69
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "MySQL",
+            "postings_with_skill": 3,
+            "total_role_postings": 434,
+            "percentage": 0.69
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "CSS",
+            "postings_with_skill": 2,
+            "total_role_postings": 434,
+            "percentage": 0.46
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Pandas",
+            "postings_with_skill": 2,
+            "total_role_postings": 434,
+            "percentage": 0.46
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Scikit-learn",
+            "postings_with_skill": 2,
+            "total_role_postings": 434,
+            "percentage": 0.46
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "TensorFlow",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Deep Learning",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "PyTorch",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Swift",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Ruby",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "TypeScript",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "MongoDB",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "Redis",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Analyst",
+            "skill": "JUnit",
+            "postings_with_skill": 1,
+            "total_role_postings": 434,
+            "percentage": 0.23
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Python",
+            "postings_with_skill": 281,
+            "total_role_postings": 347,
+            "percentage": 80.98
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Machine Learning",
+            "postings_with_skill": 224,
+            "total_role_postings": 347,
+            "percentage": 64.55
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "SQL",
+            "postings_with_skill": 199,
+            "total_role_postings": 347,
+            "percentage": 57.35
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "AWS",
+            "postings_with_skill": 86,
+            "total_role_postings": 347,
+            "percentage": 24.78
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Deep Learning",
+            "postings_with_skill": 62,
+            "total_role_postings": 347,
+            "percentage": 17.87
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "PyTorch",
+            "postings_with_skill": 47,
+            "total_role_postings": 347,
+            "percentage": 13.54
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Google Cloud",
+            "postings_with_skill": 44,
+            "total_role_postings": 347,
+            "percentage": 12.68
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "TensorFlow",
+            "postings_with_skill": 40,
+            "total_role_postings": 347,
+            "percentage": 11.53
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 36,
+            "total_role_postings": 347,
+            "percentage": 10.37
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Hadoop",
+            "postings_with_skill": 32,
+            "total_role_postings": 347,
+            "percentage": 9.22
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Scikit-learn",
+            "postings_with_skill": 28,
+            "total_role_postings": 347,
+            "percentage": 8.07
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Java",
+            "postings_with_skill": 27,
+            "total_role_postings": 347,
+            "percentage": 7.78
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Docker",
+            "postings_with_skill": 26,
+            "total_role_postings": 347,
+            "percentage": 7.49
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Pandas",
+            "postings_with_skill": 23,
+            "total_role_postings": 347,
+            "percentage": 6.63
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Apache Spark",
+            "postings_with_skill": 21,
+            "total_role_postings": 347,
+            "percentage": 6.05
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "C++",
+            "postings_with_skill": 20,
+            "total_role_postings": 347,
+            "percentage": 5.76
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Linux",
+            "postings_with_skill": 19,
+            "total_role_postings": 347,
+            "percentage": 5.48
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "JavaScript",
+            "postings_with_skill": 19,
+            "total_role_postings": 347,
+            "percentage": 5.48
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Git",
+            "postings_with_skill": 18,
+            "total_role_postings": 347,
+            "percentage": 5.19
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "NumPy",
+            "postings_with_skill": 17,
+            "total_role_postings": 347,
+            "percentage": 4.9
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Kubernetes",
+            "postings_with_skill": 16,
+            "total_role_postings": 347,
+            "percentage": 4.61
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "CI/CD",
+            "postings_with_skill": 15,
+            "total_role_postings": 347,
+            "percentage": 4.32
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "HTML",
+            "postings_with_skill": 11,
+            "total_role_postings": 347,
+            "percentage": 3.17
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Jenkins",
+            "postings_with_skill": 9,
+            "total_role_postings": 347,
+            "percentage": 2.59
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "REST API",
+            "postings_with_skill": 8,
+            "total_role_postings": 347,
+            "percentage": 2.31
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 7,
+            "total_role_postings": 347,
+            "percentage": 2.02
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "MySQL",
+            "postings_with_skill": 7,
+            "total_role_postings": 347,
+            "percentage": 2.02
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "MongoDB",
+            "postings_with_skill": 4,
+            "total_role_postings": 347,
+            "percentage": 1.15
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "C#",
+            "postings_with_skill": 3,
+            "total_role_postings": 347,
+            "percentage": 0.86
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "CSS",
+            "postings_with_skill": 3,
+            "total_role_postings": 347,
+            "percentage": 0.86
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "React",
+            "postings_with_skill": 2,
+            "total_role_postings": 347,
+            "percentage": 0.58
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Express.js",
+            "postings_with_skill": 2,
+            "total_role_postings": 347,
+            "percentage": 0.58
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Swift",
+            "postings_with_skill": 2,
+            "total_role_postings": 347,
+            "percentage": 0.58
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "GraphQL",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Next.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Node.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "TypeScript",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Bootstrap",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "PHP",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Redis",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "Data Scientist",
+            "skill": "Ruby",
+            "postings_with_skill": 1,
+            "total_role_postings": 347,
+            "percentage": 0.29
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "CI/CD",
+            "postings_with_skill": 215,
+            "total_role_postings": 357,
+            "percentage": 60.22
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Python",
+            "postings_with_skill": 180,
+            "total_role_postings": 357,
+            "percentage": 50.42
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "AWS",
+            "postings_with_skill": 177,
+            "total_role_postings": 357,
+            "percentage": 49.58
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 162,
+            "total_role_postings": 357,
+            "percentage": 45.38
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 146,
+            "total_role_postings": 357,
+            "percentage": 40.9
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Docker",
+            "postings_with_skill": 134,
+            "total_role_postings": 357,
+            "percentage": 37.54
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Linux",
+            "postings_with_skill": 124,
+            "total_role_postings": 357,
+            "percentage": 34.73
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Jenkins",
+            "postings_with_skill": 117,
+            "total_role_postings": 357,
+            "percentage": 32.77
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Java",
+            "postings_with_skill": 83,
+            "total_role_postings": 357,
+            "percentage": 23.25
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Git",
+            "postings_with_skill": 77,
+            "total_role_postings": 357,
+            "percentage": 21.57
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 74,
+            "total_role_postings": 357,
+            "percentage": 20.73
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "SQL",
+            "postings_with_skill": 58,
+            "total_role_postings": 357,
+            "percentage": 16.25
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "JavaScript",
+            "postings_with_skill": 39,
+            "total_role_postings": 357,
+            "percentage": 10.92
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "C#",
+            "postings_with_skill": 27,
+            "total_role_postings": 357,
+            "percentage": 7.56
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": ".NET",
+            "postings_with_skill": 23,
+            "total_role_postings": 357,
+            "percentage": 6.44
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "MongoDB",
+            "postings_with_skill": 20,
+            "total_role_postings": 357,
+            "percentage": 5.6
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Redis",
+            "postings_with_skill": 18,
+            "total_role_postings": 357,
+            "percentage": 5.04
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Node.js",
+            "postings_with_skill": 16,
+            "total_role_postings": 357,
+            "percentage": 4.48
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Angular",
+            "postings_with_skill": 15,
+            "total_role_postings": 357,
+            "percentage": 4.2
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Ruby",
+            "postings_with_skill": 15,
+            "total_role_postings": 357,
+            "percentage": 4.2
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "MySQL",
+            "postings_with_skill": 13,
+            "total_role_postings": 357,
+            "percentage": 3.64
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 13,
+            "total_role_postings": 357,
+            "percentage": 3.64
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "C++",
+            "postings_with_skill": 13,
+            "total_role_postings": 357,
+            "percentage": 3.64
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "React",
+            "postings_with_skill": 13,
+            "total_role_postings": 357,
+            "percentage": 3.64
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "REST API",
+            "postings_with_skill": 12,
+            "total_role_postings": 357,
+            "percentage": 3.36
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 12,
+            "total_role_postings": 357,
+            "percentage": 3.36
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "PHP",
+            "postings_with_skill": 10,
+            "total_role_postings": 357,
+            "percentage": 2.8
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Hadoop",
+            "postings_with_skill": 9,
+            "total_role_postings": 357,
+            "percentage": 2.52
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "TypeScript",
+            "postings_with_skill": 7,
+            "total_role_postings": 357,
+            "percentage": 1.96
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Express.js",
+            "postings_with_skill": 6,
+            "total_role_postings": 357,
+            "percentage": 1.68
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Swift",
+            "postings_with_skill": 4,
+            "total_role_postings": 357,
+            "percentage": 1.12
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "GraphQL",
+            "postings_with_skill": 3,
+            "total_role_postings": 357,
+            "percentage": 0.84
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "JUnit",
+            "postings_with_skill": 2,
+            "total_role_postings": 357,
+            "percentage": 0.56
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Selenium",
+            "postings_with_skill": 2,
+            "total_role_postings": 357,
+            "percentage": 0.56
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Firebase",
+            "postings_with_skill": 2,
+            "total_role_postings": 357,
+            "percentage": 0.56
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Apache Spark",
+            "postings_with_skill": 2,
+            "total_role_postings": 357,
+            "percentage": 0.56
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Vue.js",
+            "postings_with_skill": 2,
+            "total_role_postings": 357,
+            "percentage": 0.56
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "CSS",
+            "postings_with_skill": 1,
+            "total_role_postings": 357,
+            "percentage": 0.28
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "NumPy",
+            "postings_with_skill": 1,
+            "total_role_postings": 357,
+            "percentage": 0.28
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "HTML",
+            "postings_with_skill": 1,
+            "total_role_postings": 357,
+            "percentage": 0.28
+        },
+        {
+            "role": "DevOps Engineer",
+            "skill": "Deep Learning",
+            "postings_with_skill": 1,
+            "total_role_postings": 357,
+            "percentage": 0.28
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "JavaScript",
+            "postings_with_skill": 128,
+            "total_role_postings": 263,
+            "percentage": 48.67
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "HTML",
+            "postings_with_skill": 114,
+            "total_role_postings": 263,
+            "percentage": 43.35
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "React",
+            "postings_with_skill": 77,
+            "total_role_postings": 263,
+            "percentage": 29.28
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "CSS",
+            "postings_with_skill": 68,
+            "total_role_postings": 263,
+            "percentage": 25.86
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "SQL",
+            "postings_with_skill": 49,
+            "total_role_postings": 263,
+            "percentage": 18.63
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Python",
+            "postings_with_skill": 45,
+            "total_role_postings": 263,
+            "percentage": 17.11
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "TypeScript",
+            "postings_with_skill": 44,
+            "total_role_postings": 263,
+            "percentage": 16.73
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "C#",
+            "postings_with_skill": 44,
+            "total_role_postings": 263,
+            "percentage": 16.73
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "AWS",
+            "postings_with_skill": 42,
+            "total_role_postings": 263,
+            "percentage": 15.97
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Angular",
+            "postings_with_skill": 42,
+            "total_role_postings": 263,
+            "percentage": 15.97
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "C++",
+            "postings_with_skill": 35,
+            "total_role_postings": 263,
+            "percentage": 13.31
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Git",
+            "postings_with_skill": 27,
+            "total_role_postings": 263,
+            "percentage": 10.27
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Node.js",
+            "postings_with_skill": 25,
+            "total_role_postings": 263,
+            "percentage": 9.51
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "CI/CD",
+            "postings_with_skill": 25,
+            "total_role_postings": 263,
+            "percentage": 9.51
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Java",
+            "postings_with_skill": 24,
+            "total_role_postings": 263,
+            "percentage": 9.13
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 18,
+            "total_role_postings": 263,
+            "percentage": 6.84
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 18,
+            "total_role_postings": 263,
+            "percentage": 6.84
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Vue.js",
+            "postings_with_skill": 17,
+            "total_role_postings": 263,
+            "percentage": 6.46
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Docker",
+            "postings_with_skill": 16,
+            "total_role_postings": 263,
+            "percentage": 6.08
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Jenkins",
+            "postings_with_skill": 15,
+            "total_role_postings": 263,
+            "percentage": 5.7
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "REST API",
+            "postings_with_skill": 14,
+            "total_role_postings": 263,
+            "percentage": 5.32
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Linux",
+            "postings_with_skill": 12,
+            "total_role_postings": 263,
+            "percentage": 4.56
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Bootstrap",
+            "postings_with_skill": 12,
+            "total_role_postings": 263,
+            "percentage": 4.56
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": ".NET",
+            "postings_with_skill": 12,
+            "total_role_postings": 263,
+            "percentage": 4.56
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 11,
+            "total_role_postings": 263,
+            "percentage": 4.18
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Jest",
+            "postings_with_skill": 10,
+            "total_role_postings": 263,
+            "percentage": 3.8
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 9,
+            "total_role_postings": 263,
+            "percentage": 3.42
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Ruby",
+            "postings_with_skill": 8,
+            "total_role_postings": 263,
+            "percentage": 3.04
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Next.js",
+            "postings_with_skill": 8,
+            "total_role_postings": 263,
+            "percentage": 3.04
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Express.js",
+            "postings_with_skill": 7,
+            "total_role_postings": 263,
+            "percentage": 2.66
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "PHP",
+            "postings_with_skill": 6,
+            "total_role_postings": 263,
+            "percentage": 2.28
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "React Native",
+            "postings_with_skill": 4,
+            "total_role_postings": 263,
+            "percentage": 1.52
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Tailwind CSS",
+            "postings_with_skill": 4,
+            "total_role_postings": 263,
+            "percentage": 1.52
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "GraphQL",
+            "postings_with_skill": 4,
+            "total_role_postings": 263,
+            "percentage": 1.52
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Cypress",
+            "postings_with_skill": 4,
+            "total_role_postings": 263,
+            "percentage": 1.52
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "MySQL",
+            "postings_with_skill": 3,
+            "total_role_postings": 263,
+            "percentage": 1.14
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "MongoDB",
+            "postings_with_skill": 3,
+            "total_role_postings": 263,
+            "percentage": 1.14
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Redis",
+            "postings_with_skill": 3,
+            "total_role_postings": 263,
+            "percentage": 1.14
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Hadoop",
+            "postings_with_skill": 2,
+            "total_role_postings": 263,
+            "percentage": 0.76
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Playwright",
+            "postings_with_skill": 1,
+            "total_role_postings": 263,
+            "percentage": 0.38
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "JUnit",
+            "postings_with_skill": 1,
+            "total_role_postings": 263,
+            "percentage": 0.38
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 1,
+            "total_role_postings": 263,
+            "percentage": 0.38
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Selenium",
+            "postings_with_skill": 1,
+            "total_role_postings": 263,
+            "percentage": 0.38
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Flutter",
+            "postings_with_skill": 1,
+            "total_role_postings": 263,
+            "percentage": 0.38
+        },
+        {
+            "role": "Frontend Developer",
+            "skill": "Swift",
+            "postings_with_skill": 1,
+            "total_role_postings": 263,
+            "percentage": 0.38
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "JavaScript",
+            "postings_with_skill": 271,
+            "total_role_postings": 420,
+            "percentage": 64.52
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Java",
+            "postings_with_skill": 225,
+            "total_role_postings": 420,
+            "percentage": 53.57
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "AWS",
+            "postings_with_skill": 194,
+            "total_role_postings": 420,
+            "percentage": 46.19
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "React",
+            "postings_with_skill": 190,
+            "total_role_postings": 420,
+            "percentage": 45.24
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "SQL",
+            "postings_with_skill": 168,
+            "total_role_postings": 420,
+            "percentage": 40.0
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "CSS",
+            "postings_with_skill": 140,
+            "total_role_postings": 420,
+            "percentage": 33.33
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "HTML",
+            "postings_with_skill": 134,
+            "total_role_postings": 420,
+            "percentage": 31.9
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Angular",
+            "postings_with_skill": 134,
+            "total_role_postings": 420,
+            "percentage": 31.9
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Python",
+            "postings_with_skill": 132,
+            "total_role_postings": 420,
+            "percentage": 31.43
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "TypeScript",
+            "postings_with_skill": 130,
+            "total_role_postings": 420,
+            "percentage": 30.95
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 123,
+            "total_role_postings": 420,
+            "percentage": 29.29
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "CI/CD",
+            "postings_with_skill": 120,
+            "total_role_postings": 420,
+            "percentage": 28.57
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Docker",
+            "postings_with_skill": 110,
+            "total_role_postings": 420,
+            "percentage": 26.19
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 104,
+            "total_role_postings": 420,
+            "percentage": 24.76
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Node.js",
+            "postings_with_skill": 98,
+            "total_role_postings": 420,
+            "percentage": 23.33
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Git",
+            "postings_with_skill": 88,
+            "total_role_postings": 420,
+            "percentage": 20.95
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 79,
+            "total_role_postings": 420,
+            "percentage": 18.81
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": ".NET",
+            "postings_with_skill": 76,
+            "total_role_postings": 420,
+            "percentage": 18.1
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "REST API",
+            "postings_with_skill": 70,
+            "total_role_postings": 420,
+            "percentage": 16.67
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "C#",
+            "postings_with_skill": 54,
+            "total_role_postings": 420,
+            "percentage": 12.86
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Jenkins",
+            "postings_with_skill": 50,
+            "total_role_postings": 420,
+            "percentage": 11.9
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 49,
+            "total_role_postings": 420,
+            "percentage": 11.67
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "MySQL",
+            "postings_with_skill": 39,
+            "total_role_postings": 420,
+            "percentage": 9.29
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Vue.js",
+            "postings_with_skill": 34,
+            "total_role_postings": 420,
+            "percentage": 8.1
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "MongoDB",
+            "postings_with_skill": 31,
+            "total_role_postings": 420,
+            "percentage": 7.38
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 29,
+            "total_role_postings": 420,
+            "percentage": 6.9
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "PHP",
+            "postings_with_skill": 28,
+            "total_role_postings": 420,
+            "percentage": 6.67
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Express.js",
+            "postings_with_skill": 25,
+            "total_role_postings": 420,
+            "percentage": 5.95
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Linux",
+            "postings_with_skill": 22,
+            "total_role_postings": 420,
+            "percentage": 5.24
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "C++",
+            "postings_with_skill": 21,
+            "total_role_postings": 420,
+            "percentage": 5.0
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Ruby",
+            "postings_with_skill": 20,
+            "total_role_postings": 420,
+            "percentage": 4.76
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "GraphQL",
+            "postings_with_skill": 20,
+            "total_role_postings": 420,
+            "percentage": 4.76
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "JUnit",
+            "postings_with_skill": 18,
+            "total_role_postings": 420,
+            "percentage": 4.29
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Bootstrap",
+            "postings_with_skill": 13,
+            "total_role_postings": 420,
+            "percentage": 3.1
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Jest",
+            "postings_with_skill": 12,
+            "total_role_postings": 420,
+            "percentage": 2.86
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Selenium",
+            "postings_with_skill": 12,
+            "total_role_postings": 420,
+            "percentage": 2.86
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Next.js",
+            "postings_with_skill": 10,
+            "total_role_postings": 420,
+            "percentage": 2.38
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "React Native",
+            "postings_with_skill": 10,
+            "total_role_postings": 420,
+            "percentage": 2.38
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Redis",
+            "postings_with_skill": 10,
+            "total_role_postings": 420,
+            "percentage": 2.38
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Swift",
+            "postings_with_skill": 9,
+            "total_role_postings": 420,
+            "percentage": 2.14
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Cypress",
+            "postings_with_skill": 8,
+            "total_role_postings": 420,
+            "percentage": 1.9
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Kotlin",
+            "postings_with_skill": 7,
+            "total_role_postings": 420,
+            "percentage": 1.67
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Apache Spark",
+            "postings_with_skill": 4,
+            "total_role_postings": 420,
+            "percentage": 0.95
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Flutter",
+            "postings_with_skill": 3,
+            "total_role_postings": 420,
+            "percentage": 0.71
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Playwright",
+            "postings_with_skill": 3,
+            "total_role_postings": 420,
+            "percentage": 0.71
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Hadoop",
+            "postings_with_skill": 3,
+            "total_role_postings": 420,
+            "percentage": 0.71
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Tailwind CSS",
+            "postings_with_skill": 3,
+            "total_role_postings": 420,
+            "percentage": 0.71
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "TensorFlow",
+            "postings_with_skill": 1,
+            "total_role_postings": 420,
+            "percentage": 0.24
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Deep Learning",
+            "postings_with_skill": 1,
+            "total_role_postings": 420,
+            "percentage": 0.24
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "PyTorch",
+            "postings_with_skill": 1,
+            "total_role_postings": 420,
+            "percentage": 0.24
+        },
+        {
+            "role": "Full Stack Developer",
+            "skill": "Firebase",
+            "postings_with_skill": 1,
+            "total_role_postings": 420,
+            "percentage": 0.24
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Java",
+            "postings_with_skill": 165,
+            "total_role_postings": 165,
+            "percentage": 100.0
+        },
+        {
+            "role": "Java Developer",
+            "skill": "SQL",
+            "postings_with_skill": 57,
+            "total_role_postings": 165,
+            "percentage": 34.55
+        },
+        {
+            "role": "Java Developer",
+            "skill": "AWS",
+            "postings_with_skill": 48,
+            "total_role_postings": 165,
+            "percentage": 29.09
+        },
+        {
+            "role": "Java Developer",
+            "skill": "REST API",
+            "postings_with_skill": 38,
+            "total_role_postings": 165,
+            "percentage": 23.03
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Git",
+            "postings_with_skill": 38,
+            "total_role_postings": 165,
+            "percentage": 23.03
+        },
+        {
+            "role": "Java Developer",
+            "skill": "CI/CD",
+            "postings_with_skill": 35,
+            "total_role_postings": 165,
+            "percentage": 21.21
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 34,
+            "total_role_postings": 165,
+            "percentage": 20.61
+        },
+        {
+            "role": "Java Developer",
+            "skill": "JavaScript",
+            "postings_with_skill": 33,
+            "total_role_postings": 165,
+            "percentage": 20.0
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Jenkins",
+            "postings_with_skill": 29,
+            "total_role_postings": 165,
+            "percentage": 17.58
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Angular",
+            "postings_with_skill": 24,
+            "total_role_postings": 165,
+            "percentage": 14.55
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Docker",
+            "postings_with_skill": 23,
+            "total_role_postings": 165,
+            "percentage": 13.94
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Python",
+            "postings_with_skill": 21,
+            "total_role_postings": 165,
+            "percentage": 12.73
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 20,
+            "total_role_postings": 165,
+            "percentage": 12.12
+        },
+        {
+            "role": "Java Developer",
+            "skill": "JUnit",
+            "postings_with_skill": 18,
+            "total_role_postings": 165,
+            "percentage": 10.91
+        },
+        {
+            "role": "Java Developer",
+            "skill": "React",
+            "postings_with_skill": 16,
+            "total_role_postings": 165,
+            "percentage": 9.7
+        },
+        {
+            "role": "Java Developer",
+            "skill": "HTML",
+            "postings_with_skill": 15,
+            "total_role_postings": 165,
+            "percentage": 9.09
+        },
+        {
+            "role": "Java Developer",
+            "skill": "CSS",
+            "postings_with_skill": 14,
+            "total_role_postings": 165,
+            "percentage": 8.48
+        },
+        {
+            "role": "Java Developer",
+            "skill": "MongoDB",
+            "postings_with_skill": 14,
+            "total_role_postings": 165,
+            "percentage": 8.48
+        },
+        {
+            "role": "Java Developer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 12,
+            "total_role_postings": 165,
+            "percentage": 7.27
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Linux",
+            "postings_with_skill": 12,
+            "total_role_postings": 165,
+            "percentage": 7.27
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Redis",
+            "postings_with_skill": 9,
+            "total_role_postings": 165,
+            "percentage": 5.45
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Node.js",
+            "postings_with_skill": 8,
+            "total_role_postings": 165,
+            "percentage": 4.85
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 8,
+            "total_role_postings": 165,
+            "percentage": 4.85
+        },
+        {
+            "role": "Java Developer",
+            "skill": ".NET",
+            "postings_with_skill": 6,
+            "total_role_postings": 165,
+            "percentage": 3.64
+        },
+        {
+            "role": "Java Developer",
+            "skill": "MySQL",
+            "postings_with_skill": 5,
+            "total_role_postings": 165,
+            "percentage": 3.03
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Hadoop",
+            "postings_with_skill": 4,
+            "total_role_postings": 165,
+            "percentage": 2.42
+        },
+        {
+            "role": "Java Developer",
+            "skill": "TypeScript",
+            "postings_with_skill": 3,
+            "total_role_postings": 165,
+            "percentage": 1.82
+        },
+        {
+            "role": "Java Developer",
+            "skill": "C#",
+            "postings_with_skill": 3,
+            "total_role_postings": 165,
+            "percentage": 1.82
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Bootstrap",
+            "postings_with_skill": 2,
+            "total_role_postings": 165,
+            "percentage": 1.21
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Swift",
+            "postings_with_skill": 2,
+            "total_role_postings": 165,
+            "percentage": 1.21
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 2,
+            "total_role_postings": 165,
+            "percentage": 1.21
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Kotlin",
+            "postings_with_skill": 2,
+            "total_role_postings": 165,
+            "percentage": 1.21
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Vue.js",
+            "postings_with_skill": 2,
+            "total_role_postings": 165,
+            "percentage": 1.21
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Selenium",
+            "postings_with_skill": 2,
+            "total_role_postings": 165,
+            "percentage": 1.21
+        },
+        {
+            "role": "Java Developer",
+            "skill": "GraphQL",
+            "postings_with_skill": 1,
+            "total_role_postings": 165,
+            "percentage": 0.61
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Ruby",
+            "postings_with_skill": 1,
+            "total_role_postings": 165,
+            "percentage": 0.61
+        },
+        {
+            "role": "Java Developer",
+            "skill": "Flutter",
+            "postings_with_skill": 1,
+            "total_role_postings": 165,
+            "percentage": 0.61
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 94,
+            "total_role_postings": 96,
+            "percentage": 97.92
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Python",
+            "postings_with_skill": 81,
+            "total_role_postings": 96,
+            "percentage": 84.38
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "TensorFlow",
+            "postings_with_skill": 41,
+            "total_role_postings": 96,
+            "percentage": 42.71
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "PyTorch",
+            "postings_with_skill": 41,
+            "total_role_postings": 96,
+            "percentage": 42.71
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Deep Learning",
+            "postings_with_skill": 36,
+            "total_role_postings": 96,
+            "percentage": 37.5
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "AWS",
+            "postings_with_skill": 27,
+            "total_role_postings": 96,
+            "percentage": 28.12
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Java",
+            "postings_with_skill": 25,
+            "total_role_postings": 96,
+            "percentage": 26.04
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 21,
+            "total_role_postings": 96,
+            "percentage": 21.88
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 19,
+            "total_role_postings": 96,
+            "percentage": 19.79
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "C++",
+            "postings_with_skill": 19,
+            "total_role_postings": 96,
+            "percentage": 19.79
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "SQL",
+            "postings_with_skill": 19,
+            "total_role_postings": 96,
+            "percentage": 19.79
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Scikit-learn",
+            "postings_with_skill": 16,
+            "total_role_postings": 96,
+            "percentage": 16.67
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 16,
+            "total_role_postings": 96,
+            "percentage": 16.67
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "CI/CD",
+            "postings_with_skill": 13,
+            "total_role_postings": 96,
+            "percentage": 13.54
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Docker",
+            "postings_with_skill": 12,
+            "total_role_postings": 96,
+            "percentage": 12.5
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Pandas",
+            "postings_with_skill": 10,
+            "total_role_postings": 96,
+            "percentage": 10.42
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "NumPy",
+            "postings_with_skill": 9,
+            "total_role_postings": 96,
+            "percentage": 9.38
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Hadoop",
+            "postings_with_skill": 8,
+            "total_role_postings": 96,
+            "percentage": 8.33
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Node.js",
+            "postings_with_skill": 6,
+            "total_role_postings": 96,
+            "percentage": 6.25
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Apache Spark",
+            "postings_with_skill": 5,
+            "total_role_postings": 96,
+            "percentage": 5.21
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Git",
+            "postings_with_skill": 5,
+            "total_role_postings": 96,
+            "percentage": 5.21
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Express.js",
+            "postings_with_skill": 4,
+            "total_role_postings": 96,
+            "percentage": 4.17
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Linux",
+            "postings_with_skill": 4,
+            "total_role_postings": 96,
+            "percentage": 4.17
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "Jenkins",
+            "postings_with_skill": 3,
+            "total_role_postings": 96,
+            "percentage": 3.12
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "C#",
+            "postings_with_skill": 3,
+            "total_role_postings": 96,
+            "percentage": 3.12
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "MongoDB",
+            "postings_with_skill": 3,
+            "total_role_postings": 96,
+            "percentage": 3.12
+        },
+        {
+            "role": "Machine Learning Engineer",
+            "skill": "MySQL",
+            "postings_with_skill": 1,
+            "total_role_postings": 96,
+            "percentage": 1.04
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Swift",
+            "postings_with_skill": 26,
+            "total_role_postings": 66,
+            "percentage": 39.39
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Java",
+            "postings_with_skill": 25,
+            "total_role_postings": 66,
+            "percentage": 37.88
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Kotlin",
+            "postings_with_skill": 23,
+            "total_role_postings": 66,
+            "percentage": 34.85
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "CI/CD",
+            "postings_with_skill": 20,
+            "total_role_postings": 66,
+            "percentage": 30.3
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Git",
+            "postings_with_skill": 16,
+            "total_role_postings": 66,
+            "percentage": 24.24
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "REST API",
+            "postings_with_skill": 15,
+            "total_role_postings": 66,
+            "percentage": 22.73
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "AWS",
+            "postings_with_skill": 14,
+            "total_role_postings": 66,
+            "percentage": 21.21
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "React",
+            "postings_with_skill": 12,
+            "total_role_postings": 66,
+            "percentage": 18.18
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "React Native",
+            "postings_with_skill": 10,
+            "total_role_postings": 66,
+            "percentage": 15.15
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "JavaScript",
+            "postings_with_skill": 7,
+            "total_role_postings": 66,
+            "percentage": 10.61
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Jenkins",
+            "postings_with_skill": 6,
+            "total_role_postings": 66,
+            "percentage": 9.09
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": ".NET",
+            "postings_with_skill": 5,
+            "total_role_postings": 66,
+            "percentage": 7.58
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Flutter",
+            "postings_with_skill": 5,
+            "total_role_postings": 66,
+            "percentage": 7.58
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Python",
+            "postings_with_skill": 4,
+            "total_role_postings": 66,
+            "percentage": 6.06
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "C++",
+            "postings_with_skill": 4,
+            "total_role_postings": 66,
+            "percentage": 6.06
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "C#",
+            "postings_with_skill": 3,
+            "total_role_postings": 66,
+            "percentage": 4.55
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "HTML",
+            "postings_with_skill": 3,
+            "total_role_postings": 66,
+            "percentage": 4.55
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Firebase",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "MySQL",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Linux",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Node.js",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Angular",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "SQL",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "GraphQL",
+            "postings_with_skill": 2,
+            "total_role_postings": 66,
+            "percentage": 3.03
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Express.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 66,
+            "percentage": 1.52
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 1,
+            "total_role_postings": 66,
+            "percentage": 1.52
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "Docker",
+            "postings_with_skill": 1,
+            "total_role_postings": 66,
+            "percentage": 1.52
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 1,
+            "total_role_postings": 66,
+            "percentage": 1.52
+        },
+        {
+            "role": "Mobile Developer",
+            "skill": "CSS",
+            "postings_with_skill": 1,
+            "total_role_postings": 66,
+            "percentage": 1.52
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Python",
+            "postings_with_skill": 69,
+            "total_role_postings": 69,
+            "percentage": 100.0
+        },
+        {
+            "role": "Python Developer",
+            "skill": "AWS",
+            "postings_with_skill": 26,
+            "total_role_postings": 69,
+            "percentage": 37.68
+        },
+        {
+            "role": "Python Developer",
+            "skill": "SQL",
+            "postings_with_skill": 22,
+            "total_role_postings": 69,
+            "percentage": 31.88
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Git",
+            "postings_with_skill": 16,
+            "total_role_postings": 69,
+            "percentage": 23.19
+        },
+        {
+            "role": "Python Developer",
+            "skill": "JavaScript",
+            "postings_with_skill": 15,
+            "total_role_postings": 69,
+            "percentage": 21.74
+        },
+        {
+            "role": "Python Developer",
+            "skill": "CI/CD",
+            "postings_with_skill": 14,
+            "total_role_postings": 69,
+            "percentage": 20.29
+        },
+        {
+            "role": "Python Developer",
+            "skill": "REST API",
+            "postings_with_skill": 12,
+            "total_role_postings": 69,
+            "percentage": 17.39
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Docker",
+            "postings_with_skill": 11,
+            "total_role_postings": 69,
+            "percentage": 15.94
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 10,
+            "total_role_postings": 69,
+            "percentage": 14.49
+        },
+        {
+            "role": "Python Developer",
+            "skill": "HTML",
+            "postings_with_skill": 10,
+            "total_role_postings": 69,
+            "percentage": 14.49
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 8,
+            "total_role_postings": 69,
+            "percentage": 11.59
+        },
+        {
+            "role": "Python Developer",
+            "skill": "CSS",
+            "postings_with_skill": 8,
+            "total_role_postings": 69,
+            "percentage": 11.59
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Jenkins",
+            "postings_with_skill": 8,
+            "total_role_postings": 69,
+            "percentage": 11.59
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 7,
+            "total_role_postings": 69,
+            "percentage": 10.14
+        },
+        {
+            "role": "Python Developer",
+            "skill": "NumPy",
+            "postings_with_skill": 7,
+            "total_role_postings": 69,
+            "percentage": 10.14
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Java",
+            "postings_with_skill": 7,
+            "total_role_postings": 69,
+            "percentage": 10.14
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Linux",
+            "postings_with_skill": 7,
+            "total_role_postings": 69,
+            "percentage": 10.14
+        },
+        {
+            "role": "Python Developer",
+            "skill": "React",
+            "postings_with_skill": 6,
+            "total_role_postings": 69,
+            "percentage": 8.7
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Angular",
+            "postings_with_skill": 6,
+            "total_role_postings": 69,
+            "percentage": 8.7
+        },
+        {
+            "role": "Python Developer",
+            "skill": "MySQL",
+            "postings_with_skill": 5,
+            "total_role_postings": 69,
+            "percentage": 7.25
+        },
+        {
+            "role": "Python Developer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 5,
+            "total_role_postings": 69,
+            "percentage": 7.25
+        },
+        {
+            "role": "Python Developer",
+            "skill": "MongoDB",
+            "postings_with_skill": 5,
+            "total_role_postings": 69,
+            "percentage": 7.25
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Pandas",
+            "postings_with_skill": 5,
+            "total_role_postings": 69,
+            "percentage": 7.25
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Deep Learning",
+            "postings_with_skill": 5,
+            "total_role_postings": 69,
+            "percentage": 7.25
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 4,
+            "total_role_postings": 69,
+            "percentage": 5.8
+        },
+        {
+            "role": "Python Developer",
+            "skill": ".NET",
+            "postings_with_skill": 3,
+            "total_role_postings": 69,
+            "percentage": 4.35
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Apache Spark",
+            "postings_with_skill": 2,
+            "total_role_postings": 69,
+            "percentage": 2.9
+        },
+        {
+            "role": "Python Developer",
+            "skill": "PyTorch",
+            "postings_with_skill": 2,
+            "total_role_postings": 69,
+            "percentage": 2.9
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Ruby",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Redis",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Next.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Scikit-learn",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Node.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "C++",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "TypeScript",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Cypress",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "TensorFlow",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "Python Developer",
+            "skill": "Vue.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 69,
+            "percentage": 1.45
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Java",
+            "postings_with_skill": 18,
+            "total_role_postings": 33,
+            "percentage": 54.55
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Selenium",
+            "postings_with_skill": 17,
+            "total_role_postings": 33,
+            "percentage": 51.52
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Python",
+            "postings_with_skill": 13,
+            "total_role_postings": 33,
+            "percentage": 39.39
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "SQL",
+            "postings_with_skill": 8,
+            "total_role_postings": 33,
+            "percentage": 24.24
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Jenkins",
+            "postings_with_skill": 8,
+            "total_role_postings": 33,
+            "percentage": 24.24
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "AWS",
+            "postings_with_skill": 7,
+            "total_role_postings": 33,
+            "percentage": 21.21
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "CI/CD",
+            "postings_with_skill": 6,
+            "total_role_postings": 33,
+            "percentage": 18.18
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "JavaScript",
+            "postings_with_skill": 4,
+            "total_role_postings": 33,
+            "percentage": 12.12
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Linux",
+            "postings_with_skill": 3,
+            "total_role_postings": 33,
+            "percentage": 9.09
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Playwright",
+            "postings_with_skill": 3,
+            "total_role_postings": 33,
+            "percentage": 9.09
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": ".NET",
+            "postings_with_skill": 3,
+            "total_role_postings": 33,
+            "percentage": 9.09
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "GraphQL",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "C#",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "HTML",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Git",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "REST API",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Docker",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "React",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Cypress",
+            "postings_with_skill": 2,
+            "total_role_postings": 33,
+            "percentage": 6.06
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "CSS",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Ruby",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "C++",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Angular",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "TypeScript",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "JUnit",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Jest",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "React Native",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Kotlin",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Swift",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "QA Automation Engineer",
+            "skill": "Express.js",
+            "postings_with_skill": 1,
+            "total_role_postings": 33,
+            "percentage": 3.03
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Python",
+            "postings_with_skill": 468,
+            "total_role_postings": 1271,
+            "percentage": 36.82
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Java",
+            "postings_with_skill": 465,
+            "total_role_postings": 1271,
+            "percentage": 36.59
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "JavaScript",
+            "postings_with_skill": 420,
+            "total_role_postings": 1271,
+            "percentage": 33.04
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "SQL",
+            "postings_with_skill": 403,
+            "total_role_postings": 1271,
+            "percentage": 31.71
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "C++",
+            "postings_with_skill": 351,
+            "total_role_postings": 1271,
+            "percentage": 27.62
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "AWS",
+            "postings_with_skill": 303,
+            "total_role_postings": 1271,
+            "percentage": 23.84
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "C#",
+            "postings_with_skill": 277,
+            "total_role_postings": 1271,
+            "percentage": 21.79
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "CI/CD",
+            "postings_with_skill": 258,
+            "total_role_postings": 1271,
+            "percentage": 20.3
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Microsoft Azure",
+            "postings_with_skill": 227,
+            "total_role_postings": 1271,
+            "percentage": 17.86
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "HTML",
+            "postings_with_skill": 217,
+            "total_role_postings": 1271,
+            "percentage": 17.07
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Git",
+            "postings_with_skill": 208,
+            "total_role_postings": 1271,
+            "percentage": 16.37
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "React",
+            "postings_with_skill": 195,
+            "total_role_postings": 1271,
+            "percentage": 15.34
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Linux",
+            "postings_with_skill": 183,
+            "total_role_postings": 1271,
+            "percentage": 14.4
+        },
+        {
+            "role": "Software Engineer",
+            "skill": ".NET",
+            "postings_with_skill": 179,
+            "total_role_postings": 1271,
+            "percentage": 14.08
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Kubernetes",
+            "postings_with_skill": 168,
+            "total_role_postings": 1271,
+            "percentage": 13.22
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Docker",
+            "postings_with_skill": 158,
+            "total_role_postings": 1271,
+            "percentage": 12.43
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "TypeScript",
+            "postings_with_skill": 146,
+            "total_role_postings": 1271,
+            "percentage": 11.49
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "CSS",
+            "postings_with_skill": 129,
+            "total_role_postings": 1271,
+            "percentage": 10.15
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Angular",
+            "postings_with_skill": 127,
+            "total_role_postings": 1271,
+            "percentage": 9.99
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Google Cloud",
+            "postings_with_skill": 121,
+            "total_role_postings": 1271,
+            "percentage": 9.52
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "REST API",
+            "postings_with_skill": 114,
+            "total_role_postings": 1271,
+            "percentage": 8.97
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Jenkins",
+            "postings_with_skill": 107,
+            "total_role_postings": 1271,
+            "percentage": 8.42
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Machine Learning",
+            "postings_with_skill": 106,
+            "total_role_postings": 1271,
+            "percentage": 8.34
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Node.js",
+            "postings_with_skill": 102,
+            "total_role_postings": 1271,
+            "percentage": 8.03
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "PostgreSQL",
+            "postings_with_skill": 81,
+            "total_role_postings": 1271,
+            "percentage": 6.37
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "MySQL",
+            "postings_with_skill": 59,
+            "total_role_postings": 1271,
+            "percentage": 4.64
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Kotlin",
+            "postings_with_skill": 46,
+            "total_role_postings": 1271,
+            "percentage": 3.62
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "MongoDB",
+            "postings_with_skill": 43,
+            "total_role_postings": 1271,
+            "percentage": 3.38
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Selenium",
+            "postings_with_skill": 38,
+            "total_role_postings": 1271,
+            "percentage": 2.99
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "GraphQL",
+            "postings_with_skill": 36,
+            "total_role_postings": 1271,
+            "percentage": 2.83
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Swift",
+            "postings_with_skill": 36,
+            "total_role_postings": 1271,
+            "percentage": 2.83
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Redis",
+            "postings_with_skill": 35,
+            "total_role_postings": 1271,
+            "percentage": 2.75
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "JUnit",
+            "postings_with_skill": 34,
+            "total_role_postings": 1271,
+            "percentage": 2.68
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Ruby",
+            "postings_with_skill": 32,
+            "total_role_postings": 1271,
+            "percentage": 2.52
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "PyTorch",
+            "postings_with_skill": 28,
+            "total_role_postings": 1271,
+            "percentage": 2.2
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Express.js",
+            "postings_with_skill": 28,
+            "total_role_postings": 1271,
+            "percentage": 2.2
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "PHP",
+            "postings_with_skill": 25,
+            "total_role_postings": 1271,
+            "percentage": 1.97
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Bootstrap",
+            "postings_with_skill": 24,
+            "total_role_postings": 1271,
+            "percentage": 1.89
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "TensorFlow",
+            "postings_with_skill": 24,
+            "total_role_postings": 1271,
+            "percentage": 1.89
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Vue.js",
+            "postings_with_skill": 23,
+            "total_role_postings": 1271,
+            "percentage": 1.81
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Hadoop",
+            "postings_with_skill": 18,
+            "total_role_postings": 1271,
+            "percentage": 1.42
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Deep Learning",
+            "postings_with_skill": 16,
+            "total_role_postings": 1271,
+            "percentage": 1.26
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "React Native",
+            "postings_with_skill": 14,
+            "total_role_postings": 1271,
+            "percentage": 1.1
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Cypress",
+            "postings_with_skill": 14,
+            "total_role_postings": 1271,
+            "percentage": 1.1
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Next.js",
+            "postings_with_skill": 11,
+            "total_role_postings": 1271,
+            "percentage": 0.87
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Apache Spark",
+            "postings_with_skill": 11,
+            "total_role_postings": 1271,
+            "percentage": 0.87
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Playwright",
+            "postings_with_skill": 10,
+            "total_role_postings": 1271,
+            "percentage": 0.79
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Jest",
+            "postings_with_skill": 9,
+            "total_role_postings": 1271,
+            "percentage": 0.71
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Scikit-learn",
+            "postings_with_skill": 9,
+            "total_role_postings": 1271,
+            "percentage": 0.71
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "NumPy",
+            "postings_with_skill": 6,
+            "total_role_postings": 1271,
+            "percentage": 0.47
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Pandas",
+            "postings_with_skill": 6,
+            "total_role_postings": 1271,
+            "percentage": 0.47
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Tailwind CSS",
+            "postings_with_skill": 4,
+            "total_role_postings": 1271,
+            "percentage": 0.31
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Flutter",
+            "postings_with_skill": 4,
+            "total_role_postings": 1271,
+            "percentage": 0.31
+        },
+        {
+            "role": "Software Engineer",
+            "skill": "Firebase",
+            "postings_with_skill": 2,
+            "total_role_postings": 1271,
+            "percentage": 0.16
+        }
+    ]
+}

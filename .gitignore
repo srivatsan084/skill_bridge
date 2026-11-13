@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+backend/.env
+backend/node_modules
+backend/uploads/*
+!backend/uploads/.gitkeep
+.DS_Store
+
+# Environment-specific files
+.env.*
+!.env.example
+
+# Raw Kaggle dataset (large source files)
+dataset/raw/
+
+# Log files
+*.log
+npm-debug.log*

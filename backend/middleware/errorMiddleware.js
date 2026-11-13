@@ -1,0 +1,45 @@
+const notFound = (req, res, next) => {
+  const error = new Error(`Resource Not Found - ${req.originalUrl}`);
+  res.status(404);
+  next(error);
+};
+
+const errorHandler = (err, req, res, next) => {
+  let statusCode = res.statusCode === 200 ? 500 : res.statusCode;
+  let message = err.message;
+
+  // Handle Mongoose duplicate key error (code 11000)
+  if (err.code === 11000) {
+    statusCode = 400;
+    const field = Object.keys(err.keyValue)[0];
+    message = `An account with this ${field} already exists. Please log in or use a different ${field}.`;
+  }
+
+  // Handle Mongoose validation errors
+  if (err.name === 'ValidationError') {
+    statusCode = 400;
+    message = Object.values(err.errors).map(val => val.message).join(', ');
+  }
+
+  // Handle Mongoose bad ObjectId (CastError)
+  if (err.name === 'CastError') {
+    statusCode = 404;
+    message = 'Resource not found with the requested identifier.';
+  }
+
+  // Handle Multer upload errors
+  if (err.name === 'MulterError') {
+    statusCode = 400;
+    if (err.code === 'LIMIT_FILE_SIZE') {
+      message = 'File size exceeds the 5 MB limit. Please upload a smaller file.';
+    }
+  }
+
+  res.status(statusCode).json({
+    success: false,
+    message,
+    stack: process.env.NODE_ENV === 'production' ? null : err.stack
+  });
+};
+
+module.exports = { notFound, errorHandler };
