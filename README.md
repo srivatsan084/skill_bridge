@@ -41,8 +41,7 @@
 - [13. Example Usage & API Tour](#13-example-usage--api-tour)
 - [14. Current Limitations vs. Roadmap](#14-current-limitations-vs-roadmap)
 - [15. Security & Privacy Posture](#15-security--privacy-posture)
-- [16. Contributing Guidelines](#16-contributing-guidelines)
-- [17. Acknowledgements & Data Sources](#17-acknowledgements--data-sources)
+- [16. Acknowledgements & Data Sources](#16-acknowledgements--data-sources)
 
 ---
 
@@ -520,19 +519,7 @@ curl -X POST http://localhost:3000/api/resume/<RESUME_ID>/rewrite \
 
 ---
 
-## 16. Contributing Guidelines
-
-1. **Fork the Repository**: Create your feature branch (`git checkout -b feature/NewCapability`).
-2. **Adhere to Code Standards**: Maintain modular controllers, Mongoose schemas, and descriptive error responses.
-3. **Run the Test Suite**: Ensure all 7 backend test suites pass without regression:
-   ```powershell
-   cd backend && node test-skill-extraction.js && node test-skill-gap-analysis.js
-   ```
-4. **Submit a Pull Request**: Detail your changes and include relevant test logs.
-
----
-
-## 17. Acknowledgements & Data Sources
+## 16. Acknowledgements & Data Sources
 
 - **Kaggle**: Real-world job posting records sourced from the Kaggle LinkedIn Job Postings Dataset.
 - **Open-Source Community**: Powered by Node.js, Express, React, Vite, Tailwind CSS, Lucide Icons, and Recharts.
