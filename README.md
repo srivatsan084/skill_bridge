@@ -2,7 +2,7 @@
 
 # SkillBridge
 
-### Next-Generation Skill-Gap Analysis & Career Readiness Platform for Engineering Students
+### Career readiness platform and skill-gap analyzer for engineering students
 
 [![Node.js](https://img.shields.io/badge/Node.js-20.x_LTS-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -14,7 +14,7 @@
 
 <br/>
 
-> **SkillBridge** bridges the gap between academic engineering curriculums and live tech hiring standards. By pairing **real-world LinkedIn industry posting benchmarks (3,800+ postings across 13 engineering roles)** with **deterministic resume text extraction** and **strictly grounded AI-assisted resume rewriting**, SkillBridge delivers transparent, non-hallucinated career intelligence to undergraduate engineers.
+> SkillBridge compares engineering student resumes against 3,800+ analyzed tech job postings across 13 career roles, identifies missing skills by market demand percentage, and provides grounded resume bullet-point suggestions without inventing false credentials.
 
 <br/>
 
@@ -24,7 +24,7 @@
 
 </div>
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [01. Project Overview](#01-project-overview)
 - [02. The Problem Statement](#02-the-problem-statement)
@@ -48,35 +48,35 @@
 
 ## 01. Project Overview
 
-**SkillBridge** is a containerized, full-stack career readiness platform engineered specifically for engineering and computer science undergraduates. Rather than relying on generic black-box keyword matching, SkillBridge anchors student skills to **empirical hiring benchmarks extracted from 123,800+ Kaggle LinkedIn job records**.
+SkillBridge is an open-source, full-stack application built to help engineering students evaluate their technical preparation against actual market hiring requirements. The platform compares uploaded resumes (`.pdf` and `.docx`) against structured role requirements extracted from 123,800+ Kaggle LinkedIn job postings, highlights missing competencies, and helps rewrite project descriptions with clear technical framing.
 
 ```
 ┌──────────────────────┐         ┌──────────────────────┐         ┌──────────────────────┐
-│  3,800+ Real Job     │         │ Deterministic Regex  │         │ Grounded AI Engine   │
-│  Postings Mined      │ ──────> │ Multi-Format Resume  │ ──────> │ Strict Anti-         │
-│  Across 13 Tech Roles│         │ Skill Extraction     │         │ Hallucination Rewrite│
+│  3,800+ Job Postings │         │ Deterministic Regex  │         │ Grounded Resume      │
+│  Mined Across 13     │ ──────> │ Multi-Format Resume  │ ──────> │ Rewrite Engine       │
+│  Engineering Roles   │         │ Skill Extraction     │         │ (Non-Fabricating)    │
 └──────────────────────┘         └──────────────────────┘         └──────────────────────┘
 ```
 
-The system ingests student resumes (`.pdf` and `.docx`), executes memory-isolated text extraction, identifies technical proficiencies across 40+ canonical skill taxonomies, calculates statistical skill gaps against market demand frequencies, and generates ATS-optimized project rewrites without ever fabricating metrics, employers, or unearned skills.
+The system ingests student resumes, executes memory-isolated text extraction, identifies technical proficiencies across 40+ canonical skill patterns, calculates skill gaps against posting frequencies, and generates ATS-readable project rewrites without fabricating metrics, employers, or unearned skills.
 
 ---
 
 ## 02. The Problem Statement
 
-- **Academic Disconnect**: University curriculums prioritize theoretical foundations (compiler design, automata theory) while entry-level hiring evaluates applied ecosystems (`Docker`, `REST APIs`, `React`, cloud platforms, and microservices).
+- **Academic Disconnect**: University curriculums prioritize theoretical foundations (compiler design, automata theory) while entry-level software roles evaluate candidates on applied ecosystems (`Docker`, `REST APIs`, `React`, cloud platforms, and microservices).
 
 ---
 
 ## 03. Our Solution
 
-- 📊 **Empirical Market Ground Truth**: 13 career roles with 507 skill frequency benchmarks derived from 3,804 unique engineering job postings.
-- 🎯 **Transparent 3-Way Skill Partitioning**:
-  - **Matched Skills**: Validated in both the resume and the target industry benchmark.
-  - **Missing Skills**: Industry technologies absent from the resume, classified into: **High Frequency ($\ge 30\%$)**, **Moderate Frequency ($15\text{--}29\%$)**, and **Specialized ($< 15\%$)**.
-  - **Resume-Only Skills**: Valuable supplementary student competencies that differentiate the applicant.
-- 🛡️ **Zero-Hallucination AI Architecture**: Strict non-fabrication prompt boundaries: zero synthetic metrics, zero invented history, zero unearned skills, and mandatory verification warnings.
-- 🔒 **Enterprise-Grade Infrastructure**: Containerized 3-tier architecture with an Nginx reverse proxy eliminating CORS and third-party cookie restrictions, paired with JWT authentication via `HttpOnly` cookies.
+- **Market Benchmark Data**: 13 career roles and 507 skill frequency benchmarks derived from 3,804 unique engineering job postings.
+- **Three-Way Skill Categorization**:
+  - **Matched Skills**: Present in both the resume and the target role benchmark.
+  - **Missing Skills**: Industry technologies absent from the resume, ranked into: **High Frequency ($\ge 30\%$)**, **Moderate Frequency ($15\text{--}29\%$)**, and **Specialized ($< 15\%$)** tiers.
+  - **Resume-Only Skills**: Additional skills detected in the resume that can serve as differentiators.
+- **Grounded Resume Rewriting**: Rewrites project bullets using action verbs and structured phrasing while forbidding fabricated metrics, companies, or unearned skills.
+- **Containerized Architecture**: Three-tier setup with an Nginx reverse proxy, Node.js/Express REST API, and MongoDB with JWT authentication via HttpOnly cookies.
 
 ---
 
@@ -181,34 +181,34 @@ sequenceDiagram
 ```
 
 ### Processing Stages
-1. **Industry Data Ingestion**: `importIndustryData.js` automatically executes on backend boot via Docker CMD, idempotently upserting 13 industry role profiles from `role_skill_summary.json` into MongoDB.
-2. **Authentication & Session Security**: Passwords hashed with `bcryptjs` (salt 10). Issues signed JWT inside an `HttpOnly`, `SameSite=lax` cookie, securing sessions against XSS.
-3. **Multi-Format Text Ingestion**: Buffers `.pdf` and `.docx` files in memory. Parses `.pdf` via `pdf-parse` using isolated unpooled `Uint8Array` buffers and `.docx` via `mammoth`. Sanitizes whitespace and rejects non-OCR/empty files (< 15 characters).
-4. **Deterministic Skill Extraction**: Evaluates text against 40+ canonical regex rules. Employs contextual guards for single-letter and common words (`C`, `R`, `Go`) and normalizes aliases (`ReactJS` $\rightarrow$ `React`, `NodeJS` $\rightarrow$ `Node.js`, `k8s` $\rightarrow$ `Kubernetes`).
-5. **Skill-Gap Analysis**: Partitions skills against real MongoDB posting counts into Matched, Missing (High $\ge 30\%$, Moderate $15\text{--}29\%$, Specialized $< 15\%$), and Resume-Only differentiators.
-6. **Grounded AI Rewrite**: Refactors projects and experience into STAR/XYZ bullet points with strong technical verbs, groups skills into ATS presentation blocks, and enforces a mandatory non-fabrication warning.
+1. **Industry Data Ingestion**: `importIndustryData.js` runs automatically on backend boot via Docker CMD, idempotently upserting 13 role profiles from `role_skill_summary.json` into MongoDB.
+2. **Authentication & Session Security**: Passwords hashed with `bcryptjs` (salt 10). Issues a signed JWT inside an `HttpOnly`, `SameSite=lax` cookie to prevent client-side token exposure.
+3. **Multi-Format Text Ingestion**: Buffers `.pdf` and `.docx` files in memory. Parses `.pdf` through `pdf-parse` using isolated unpooled `Uint8Array` buffers and `.docx` through `mammoth`. Rejects empty or scanned files under 15 characters.
+4. **Deterministic Skill Extraction**: Evaluates text against 40+ canonical regex rules. Employs contextual boundaries for single-letter and common words (`C`, `R`, `Go`) and normalizes aliases (`ReactJS` $\rightarrow$ `React`, `NodeJS` $\rightarrow$ `Node.js`, `k8s` $\rightarrow$ `Kubernetes`).
+5. **Skill-Gap Analysis**: Partitions skills against MongoDB posting records into Matched, Missing (High $\ge 30\%$, Moderate $15\text{--}29\%$, Specialized $< 15\%$), and Resume-Only differentiators.
+6. **Grounded AI Rewrite**: Refactors projects and experience into action-oriented bullet points, groups skills into ATS presentation blocks, and attaches a verification reminder.
 
 ---
 
 ## 06. Core Features
 
-### 1. Empirical Career Explorer (13 Roles, 3,800+ Postings)
-Browse live hiring demands across 13 engineering career roles: *Full Stack Developer, Frontend Developer, Backend Developer, Software Engineer, Data Scientist, Data Analyst, Machine Learning Engineer, AI Engineer, DevOps Engineer, QA Automation Engineer, Mobile Developer, Java Developer, and Python Developer*. Includes real-time search, sorting, and frequency tier filtering.
+### 1. Career Explorer (13 Roles, 3,800+ Postings)
+Browse hiring requirements across 13 engineering career tracks: *Full Stack Developer, Frontend Developer, Backend Developer, Software Engineer, Data Scientist, Data Analyst, Machine Learning Engineer, AI Engineer, DevOps Engineer, QA Automation Engineer, Mobile Developer, Java Developer, and Python Developer*. Includes real-time search, sorting, and frequency tier filtering.
 
 ### 2. Multi-Format Resume Ingestion & Text Inspection
 Direct upload of PDF and DOCX documents (up to 5MB) handled through `multer.memoryStorage()`. Provides immediate word count, character count, and structured text inspection.
 
-### 3. Context-Aware Skill Extractor (Zero False Positives)
-Curated dictionary of 40+ regex patterns with negative lookaheads and lookbehinds. Words like "Section C", "Grade C", or "Let's go" produce zero false-positive skill detections.
+### 3. Context-Aware Skill Extractor
+Curated dictionary of 40+ regex patterns with boundary conditions. Avoids false matches on common words or single letters (such as course numbers or grades).
 
 ### 4. Visual Skill-Gap Radar & Frequency Tiering
 Interactive Recharts bar visualizations comparing candidate skills directly against posting percentages (e.g., 420 postings for Full Stack Developer), categorizing gaps into High ($\ge 30\%$), Moderate ($15\text{--}29\%$), and Specialized ($< 15\%$).
 
-### 5. Grounded AI Resume Rewriter
-One-click ATS optimization using Google Gemini 3.1 Flash-Lite (`@google/genai` SDK Interactions API). Extracts every personal/academic project, rewrites bullet points with strong technical verbs, and outputs clean ATS categories with copy-to-clipboard markdown support.
+### 5. Resume Rewriter
+ATS-focused project bullet point optimization powered by Gemini 3.1 Flash-Lite (`@google/genai` SDK Interactions API). Extracts personal and academic projects, suggests strong action verbs, and formats skills into organized sections with copy-to-clipboard markdown support.
 
-### 6. Academic Roadmaps & Curated Free Learning Resources
-Semester-by-semester milestone roadmaps aligned with college academic terms, paired with 100% free learning resources (MDN, freeCodeCamp, official docs) mapped directly to missing skills.
+### 6. Academic Roadmaps & Free Learning Resources
+Semester-by-semester milestone roadmaps aligned with college academic terms, paired with free learning resources (MDN, freeCodeCamp, official documentation) mapped directly to missing skills.
 
 ---
 
@@ -217,12 +217,12 @@ Semester-by-semester milestone roadmaps aligned with college academic terms, pai
 | Category | Technology | Version | Purpose & Application |
 | :--- | :--- | :--- | :--- |
 | **Frontend Framework** | **React** | `^18.3.1` | Component-based UI powering student and public views |
-| **Build Tooling** | **Vite** | `^5.4.11` | Rapid HMR and optimized production asset bundling |
+| **Build Tooling** | **Vite** | `^5.4.11` | HMR and optimized production asset bundling |
 | **Styling** | **Tailwind CSS** | `^3.4.1` | Responsive utility-first styling and theme tokens |
-| **Icons & Visuals** | **Lucide React** | `^0.460.0` | Clean iconography across dashboards and status badges |
+| **Icons & Visuals** | **Lucide React** | `^0.460.0` | Iconography across dashboards and status badges |
 | **Data Visualization** | **Recharts** | `^2.13.3` | Interactive SVG bar charts for skill frequency comparisons |
 | **Routing** | **React Router DOM** | `^6.28.0` | Client-side routing, protected views, and query sync |
-| **Backend Runtime** | **Node.js** | `20-alpine` | High-performance asynchronous JavaScript engine |
+| **Backend Runtime** | **Node.js** | `20-alpine` | Server runtime environment |
 | **Server Framework** | **Express.js** | `^4.21.2` | RESTful API routing, controllers, and middleware |
 | **Database & ODM** | **MongoDB & Mongoose** | `7.0` / `^8.9.5` | Document persistence, schema validation, and indexing |
 | **AI Rewrite Engine** | **Google Gemini** | `gemini-3.1-flash-lite` | Structured resume rewriting via `@google/genai` (`^3.3.0`) |
@@ -343,11 +343,11 @@ $$\text{Tier}(\text{Percentage}) = \begin{cases}
 
 ## 10. User Interface & Visual Tour
 
-- **Landing Page (`/`)**: Overview with live statistics (**13 Career Roles**, **3,800+ Postings**), feature matrices, and quick registration.
-- **Student Dashboard (`/app`)**: Career readiness gauge, active degree/semester status, and recommended next learning activity.
+- **Landing Page (`/`)**: Overview with live statistics (13 Career Roles, 3,800+ Postings), feature overview, and registration.
+- **Student Dashboard (`/app`)**: Career readiness indicator, active academic profile, and recommended next learning activity.
 - **Career Explorer (`/app/careers`)**: Searchable directory of 13 engineering tracks with posting counts and skill demand rankings.
-- **Resume Analyzer (`/app/skill-gap`)**: PDF/DOCX drag-and-drop upload, extracted text inspector, and Recharts skill gap visualizer.
-- **AI Rewrite Studio (`/app/skill-gap?subview=rewrite`)**: STAR-formatted project rewrites, categorized skill groups, and one-click ATS markdown export.
+- **Resume Analyzer (`/app/skill-gap`)**: PDF/DOCX upload, extracted text inspection, and Recharts skill gap breakdown.
+- **AI Rewrite Studio (`/app/skill-gap?subview=rewrite`)**: Project bullet point rewrites, categorized skill groups, and one-click ATS markdown export.
 
 ---
 
@@ -379,10 +379,10 @@ node test-frontend-resume-analyzer-flow.js
 ```
 
 ### Key Verified Behaviors
-- ✅ **Idempotency**: Multiple dataset import runs produce 0 duplicate records.
-- ✅ **Multi-Tenancy Security**: Cross-student access attempts return HTTP `403 Forbidden`.
-- ✅ **Ambiguity Guards**: Confirms words like "Section C" or "Let's go" produce 0 false-positive skill detections.
-- ✅ **Benchmark Accuracy**: Confirms Full Stack Developer benchmark uses 420 postings with JavaScript at 64.52% and React at 45.24%.
+- **Idempotency**: Multiple dataset import runs produce 0 duplicate records.
+- **Multi-Tenancy Security**: Cross-student access attempts return HTTP `403 Forbidden`.
+- **Ambiguity Guards**: Confirms words like "Section C" or "Let's go" produce 0 false-positive skill detections.
+- **Benchmark Accuracy**: Confirms Full Stack Developer benchmark uses 420 postings with JavaScript at 64.52% and React at 45.24%.
 
 ---
 
@@ -540,5 +540,5 @@ curl -X POST http://localhost:3000/api/resume/<RESUME_ID>/rewrite \
 ---
 
 <div align="center">
-  <sub>SkillBridge — Engineered with precision for the next generation of software engineers.</sub>
+  <sub>SkillBridge — Career readiness platform for engineering students.</sub>
 </div>
