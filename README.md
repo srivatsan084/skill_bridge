@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 SkillBridge
+# SkillBridge
 
 ### Next-Generation Skill-Gap Analysis & Career Readiness Platform for Engineering Students
 
@@ -538,7 +538,6 @@ curl -X POST http://localhost:3000/api/resume/<RESUME_ID>/rewrite \
 ## 17. Acknowledgements & Data Sources
 
 - **Kaggle**: Real-world job posting records sourced from the Kaggle LinkedIn Job Postings Dataset.
-- **Google AI Studio**: Gemini 3.1 Flash-Lite model access and `@google/genai` SDK.
 - **Open-Source Community**: Powered by Node.js, Express, React, Vite, Tailwind CSS, Lucide Icons, and Recharts.
 
 ---
