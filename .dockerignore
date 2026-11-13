@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+backend/node_modules
+backend/uploads/*
+!backend/uploads/.gitkeep
+dataset/raw
+.git
+.env
+.env.*
+*.log
+npm-debug.log*

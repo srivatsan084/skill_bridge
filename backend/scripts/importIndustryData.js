@@ -19,10 +19,12 @@ const IndustryRoleProfile = require('../models/IndustryRoleProfile');
  */
 function findSummaryFilePath() {
   const potentialPaths = [
+    process.env.INDUSTRY_DATASET_PATH,
+    path.resolve('/app/dataset/processed/role_skill_summary.json'),
     path.resolve(__dirname, '../../dataset/processed/role_skill_summary.json'),
     path.resolve(process.cwd(), 'dataset/processed/role_skill_summary.json'),
     path.resolve(process.cwd(), '../dataset/processed/role_skill_summary.json')
-  ];
+  ].filter(Boolean);
 
   for (const candidate of potentialPaths) {
     if (fs.existsSync(candidate)) {

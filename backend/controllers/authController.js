@@ -2,6 +2,27 @@ const jwt = require('jsonwebtoken');
 const Student = require('../models/Student');
 
 /**
+ * Helper to determine cookie security and SameSite configuration
+ * Defaults to lax + non-secure for local HTTP (including Docker Compose on localhost:3000)
+ * Allows secure + none when explicitly configured for HTTPS production
+ */
+const getCookieOptions = (expiresInMs = 7 * 24 * 60 * 60 * 1000) => {
+  const isProduction = process.env.NODE_ENV === 'production';
+  const cookieSecure =
+    process.env.COOKIE_SECURE === 'true' ||
+    (isProduction && process.env.COOKIE_SECURE !== 'false' && process.env.USE_HTTPS === 'true');
+  const cookieSameSite = process.env.COOKIE_SAMESITE || (cookieSecure ? 'none' : 'lax');
+
+  return {
+    expires: new Date(Date.now() + expiresInMs),
+    httpOnly: true,
+    secure: cookieSecure,
+    sameSite: cookieSameSite,
+    path: '/'
+  };
+};
+
+/**
  * Generate JWT and send via HttpOnly Cookie
  */
 const sendTokenResponse = (student, statusCode, res, message = '') => {
@@ -11,12 +32,7 @@ const sendTokenResponse = (student, statusCode, res, message = '') => {
     { expiresIn: '7d' }
   );
 
-  const cookieOptions = {
-    expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
-  };
+  const cookieOptions = getCookieOptions(7 * 24 * 60 * 60 * 1000);
 
   res.status(statusCode)
     .cookie('token', token, cookieOptions)
@@ -136,12 +152,7 @@ const login = async (req, res, next) => {
  */
 const logout = async (req, res, next) => {
   try {
-    res.cookie('token', 'none', {
-      expires: new Date(Date.now() + 5 * 1000),
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
-    });
+    res.cookie('token', 'none', getCookieOptions(5 * 1000));
 
     res.status(200).json({
       success: true,
