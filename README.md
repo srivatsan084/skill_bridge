@@ -65,9 +65,6 @@ The system ingests student resumes (`.pdf` and `.docx`), executes memory-isolate
 ## 02. The Problem Statement
 
 - **Academic Disconnect**: University curriculums prioritize theoretical foundations (compiler design, automata theory) while entry-level hiring evaluates applied ecosystems (`Docker`, `REST APIs`, `React`, cloud platforms, and microservices).
-- **The LLM Hallucination Trap**: Generic AI resume tools invent fictitious metrics (e.g., *"Scaled Redis cache by 45% for 100k users"* on sophomore course projects) and unearned tech stacks, causing students to fail technical interviews.
-- **Black-Box Keyword Matchers**: Commercial ATS checkers provide arbitrary compatibility scores without actionable, data-backed market context.
-- **Target Audience**: Engineering undergraduates, campus placement cells, and early-career software job seekers.
 
 ---
 
