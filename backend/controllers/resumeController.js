@@ -447,6 +447,7 @@ const rewriteResumeContent = async (req, res, next) => {
         rewriteResult: resume.rewriteResult
       });
     } catch (aiError) {
+      console.error('[Resume Rewrite AI Error]:', aiError.message, 'Status:', aiError.statusCode, 'Code:', aiError.code);
       const statusCode = aiError.statusCode || 500;
       return res.status(statusCode).json({
         success: false,

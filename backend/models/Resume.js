@@ -1,5 +1,50 @@
 const mongoose = require('mongoose');
 
+const rewriteResultSchema = new mongoose.Schema({
+  targetRole: { type: String },
+  professionalSummary: {
+    hasOriginalSummary: { type: Boolean, default: false },
+    improvedSummary: { type: String, default: '' },
+    summaryNotes: { type: String }
+  },
+  improvedProjects: [
+    {
+      originalTitle: { type: String },
+      improvedTitle: { type: String },
+      originalPoints: { type: [String], default: [] },
+      improvedPoints: { type: [String], default: [] },
+      skillsUsed: { type: [String], default: [] }
+    }
+  ],
+  improvedExperience: [
+    {
+      originalRole: { type: String },
+      improvedRole: { type: String },
+      originalCompany: { type: String },
+      improvedPoints: { type: [String], default: [] }
+    }
+  ],
+  improvedSkillsPresentation: {
+    categorizedSkills: [
+      {
+        category: { type: String },
+        skills: { type: [String], default: [] }
+      }
+    ],
+    presentationTips: { type: String }
+  },
+  suggestionsForMissingInfo: {
+    type: [String],
+    default: []
+  },
+  verificationWarning: {
+    type: String,
+    default: 'Please review and verify all generated wording before adding it to your resume. The AI improves phrasing but cannot verify factual accuracy. Never claim skills or achievements you have not performed.'
+  },
+  modelUsed: { type: String },
+  generatedAt: { type: Date }
+}, { _id: false });
+
 const resumeSchema = new mongoose.Schema({
   student: {
     type: mongoose.Schema.Types.ObjectId,
@@ -111,48 +156,8 @@ const resumeSchema = new mongoose.Schema({
     analyzedAt: { type: Date }
   },
   rewriteResult: {
-    targetRole: { type: String },
-    professionalSummary: {
-      hasOriginalSummary: { type: Boolean, default: false },
-      improvedSummary: { type: String, default: '' },
-      summaryNotes: { type: String }
-    },
-    improvedProjects: [
-      {
-        originalTitle: { type: String },
-        improvedTitle: { type: String },
-        originalPoints: { type: [String], default: [] },
-        improvedPoints: { type: [String], default: [] },
-        skillsUsed: { type: [String], default: [] }
-      }
-    ],
-    improvedExperience: [
-      {
-        originalRole: { type: String },
-        improvedRole: { type: String },
-        originalCompany: { type: String },
-        improvedPoints: { type: [String], default: [] }
-      }
-    ],
-    improvedSkillsPresentation: {
-      categorizedSkills: [
-        {
-          category: { type: String },
-          skills: { type: [String], default: [] }
-        }
-      ],
-      presentationTips: { type: String }
-    },
-    suggestionsForMissingInfo: {
-      type: [String],
-      default: []
-    },
-    verificationWarning: {
-      type: String,
-      default: 'Please review and verify all generated wording before adding it to your resume. The AI improves phrasing but cannot verify factual accuracy. Never claim skills or achievements you have not performed.'
-    },
-    modelUsed: { type: String },
-    generatedAt: { type: Date }
+    type: rewriteResultSchema,
+    default: null
   }
 }, {
   timestamps: true

@@ -74,6 +74,11 @@ process.on('unhandledRejection', (reason, promise) => {
   console.error('[SkillBridge Server] Unhandled Rejection at:', promise, 'reason:', reason);
 });
 
+// Keep stdin active to prevent premature exit in background task runners
+if (process.stdin.isTTY === false) {
+  process.stdin.resume();
+}
+
 const server = app.listen(PORT, () => {
   console.log(`[SkillBridge Server] Running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
 });

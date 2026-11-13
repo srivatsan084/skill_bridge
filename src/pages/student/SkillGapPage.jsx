@@ -95,6 +95,7 @@ export default function SkillGapPage() {
   const [rewriteError, setRewriteError] = useState('');
   const [rewriteErrorCode, setRewriteErrorCode] = useState('');
   const [activeRewrite, setActiveRewrite] = useState(null);
+  const [isNewlyGeneratedRewrite, setIsNewlyGeneratedRewrite] = useState(false);
   const [copiedSectionId, setCopiedSectionId] = useState(null);
   const [copiedAll, setCopiedAll] = useState(false);
 
@@ -174,11 +175,13 @@ export default function SkillGapPage() {
       } else {
         setActiveAnalysis(null);
       }
-      // Load persisted AI rewrite result from MongoDB if available
-      if (selectedResume.rewriteResult) {
+      // Load persisted AI rewrite result from MongoDB only if a valid rewrite with generatedAt exists
+      if (selectedResume.rewriteResult && selectedResume.rewriteResult.generatedAt) {
         setActiveRewrite(selectedResume.rewriteResult);
+        setIsNewlyGeneratedRewrite(false);
       } else {
         setActiveRewrite(null);
+        setIsNewlyGeneratedRewrite(false);
       }
       setAnalysisError('');
       setRewriteError('');
@@ -356,6 +359,7 @@ export default function SkillGapPage() {
       const res = await apiService.resume.rewrite(selectedResume._id, targetRoleToUse);
       if (res?.success && res.rewriteResult) {
         setActiveRewrite(res.rewriteResult);
+        setIsNewlyGeneratedRewrite(true);
         // Update local resume object in uploadedResumes array
         setUploadedResumes((prev) =>
           prev.map((r) =>
@@ -1525,24 +1529,48 @@ export default function SkillGapPage() {
                   <div className="bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 text-white p-5 rounded-2xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div className="space-y-1">
                       <div className="flex items-center gap-2">
-                        <Badge variant="purple" size="xs">
-                          Gemini AI Rewrite
-                        </Badge>
+                        {isNewlyGeneratedRewrite ? (
+                          <Badge variant="purple" size="xs">
+                            Newly Generated ✨
+                          </Badge>
+                        ) : (
+                          <Badge variant="amber" size="xs">
+                            Saved Previous Rewrite
+                          </Badge>
+                        )}
                         <span className="text-xs text-purple-200">
                           Target: <strong>{activeRewrite.targetRole}</strong>
                         </span>
                       </div>
-                      <h3 className="text-lg font-extrabold text-white">AI-Optimized Resume Draft</h3>
+                      <h3 className="text-lg font-extrabold text-white">
+                        {isNewlyGeneratedRewrite ? 'AI-Optimized Resume Draft' : 'Saved AI Resume Rewrite'}
+                      </h3>
                       <p className="text-xs text-purple-200">
-                        Generated on{' '}
-                        {new Date(activeRewrite.generatedAt || Date.now()).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'short',
-                          day: 'numeric',
-                          hour: '2-digit',
-                          minute: '2-digit'
-                        })}{' '}
-                        using <code className="bg-white/10 px-1 py-0.5 rounded text-[11px]">{activeRewrite.modelUsed || 'gemini-2.5-flash'}</code>
+                        {isNewlyGeneratedRewrite ? (
+                          <>
+                            Generated just now using{' '}
+                            <code className="bg-white/10 px-1 py-0.5 rounded text-[11px]">
+                              {activeRewrite.modelUsed || 'gemini-3.1-flash-lite'}
+                            </code>
+                          </>
+                        ) : (
+                          <>
+                            Saved from previous session on{' '}
+                            {activeRewrite.generatedAt
+                              ? new Date(activeRewrite.generatedAt).toLocaleDateString('en-US', {
+                                  year: 'numeric',
+                                  month: 'short',
+                                  day: 'numeric',
+                                  hour: '2-digit',
+                                  minute: '2-digit'
+                                })
+                              : 'earlier'}{' '}
+                            using{' '}
+                            <code className="bg-white/10 px-1 py-0.5 rounded text-[11px]">
+                              {activeRewrite.modelUsed || 'gemini-3.1-flash-lite'}
+                            </code>
+                          </>
+                        )}
                       </p>
                     </div>
 
@@ -1556,7 +1584,7 @@ export default function SkillGapPage() {
                         disabled={rewriting}
                         className="bg-white/10 hover:bg-white/20 text-white border-white/20"
                       >
-                        Regenerate
+                        {isNewlyGeneratedRewrite ? 'Regenerate' : 'Generate Fresh Rewrite'}
                       </Button>
 
                       <Button
@@ -1570,6 +1598,24 @@ export default function SkillGapPage() {
                       </Button>
                     </div>
                   </div>
+
+                  {/* Previous Result Banner notice if displaying saved previous rewrite */}
+                  {!isNewlyGeneratedRewrite && activeRewrite.generatedAt && (
+                    <div className="flex items-center justify-between p-3.5 bg-amber-50 border border-amber-200 rounded-xl text-amber-900 text-xs shadow-2xs">
+                      <div className="flex items-center gap-2.5">
+                        <Clock className="w-4 h-4 text-amber-600 shrink-0" />
+                        <span>
+                          <strong>Displaying Saved Result:</strong> You are viewing an earlier AI rewrite saved on{' '}
+                          {new Date(activeRewrite.generatedAt).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric'
+                          })}. To produce an updated draft tailored for <strong>{resumeTargetRole}</strong> with Gemini 3.1 Flash-Lite, click{' '}
+                          <strong>Generate Fresh Rewrite</strong>.
+                        </span>
+                      </div>
+                    </div>
+                  )}
 
                   {/* 1. Professional Summary Card */}
                   <Card
