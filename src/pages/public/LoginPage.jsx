@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Compass, LogIn, ArrowRight, ShieldCheck, Info, Sparkles, AlertCircle, Database } from 'lucide-react';
+import { Compass, LogIn, ArrowRight, ShieldCheck, Info, Sparkles, AlertCircle } from 'lucide-react';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
 import { useStudent } from '../../context/StudentContext';
@@ -57,22 +57,8 @@ export default function LoginPage() {
           </Link>
           <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Student Portal Login</h2>
           <p className="text-xs text-slate-500">
-            Sign in to access your semester roadmap, skills inventory and MongoDB profile.
+            Sign in to access your semester roadmap, skills inventory, and career profile.
           </p>
-        </div>
-
-        {/* MongoDB Connection Status Pill */}
-        <div className="p-3 bg-emerald-50/90 rounded-xl border border-emerald-200 text-xs text-emerald-900 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Database className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span className="font-medium text-[11px]">
-              Connected to <strong>MongoDB Community Server</strong>
-            </span>
-          </div>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-100 text-emerald-700">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            Port 5000 Active
-          </span>
         </div>
 
         {/* Error Alert */}
@@ -138,7 +124,7 @@ export default function LoginPage() {
                 icon={LogIn}
                 disabled={submitting}
               >
-                {submitting ? 'Authenticating with MongoDB...' : 'Sign In to Student Account'}
+                {submitting ? 'Signing in...' : 'Sign In to Student Account'}
               </Button>
             </div>
           </form>

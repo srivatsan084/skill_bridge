@@ -43,7 +43,7 @@ const {
 
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/skillbridge';
 const API_BASE = 'http://127.0.0.1:5000/api';
-const JWT_SECRET = process.env.JWT_SECRET || 'skillbridge_dev_secret';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 function signToken(studentId) {
   return jwt.sign({ id: studentId }, JWT_SECRET, { expiresIn: '1d' });

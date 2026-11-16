@@ -21,7 +21,14 @@ const protect = async (req, res, next) => {
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'skillbridge_dev_secret');
+    if (!process.env.JWT_SECRET) {
+      return res.status(500).json({
+        success: false,
+        message: 'Server misconfiguration: JWT_SECRET is not set.'
+      });
+    }
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     const student = await Student.findById(decoded.id).select('-password');
 
     if (!student) {

@@ -2,10 +2,21 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 const path = require('path');
 
 // Load environment variables
 dotenv.config();
+
+// Validate critical environment variables at startup
+const REQUIRED_ENV_VARS = ['JWT_SECRET', 'MONGODB_URI'];
+const missing = REQUIRED_ENV_VARS.filter(v => !process.env[v]);
+if (missing.length > 0) {
+  console.error(`[SkillBridge Server] FATAL: Missing required environment variables: ${missing.join(', ')}`);
+  console.error('[SkillBridge Server] Please configure these in backend/.env before starting the server.');
+  process.exit(1);
+}
 
 const connectDB = require('./config/db');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
@@ -19,6 +30,37 @@ const industryRoutes = require('./routes/industryRoutes');
 connectDB();
 
 const app = express();
+
+// Secure HTTP Headers
+app.use(helmet());
+
+// Global Rate Limiting (DDoS and abuse prevention)
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 300, // Limit each IP to 300 requests per 15-minute window
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    success: false,
+    message: 'Too many requests from this IP, please try again after 15 minutes.'
+  }
+});
+
+// Strict Rate Limiting for Auth endpoints (Brute-force protection)
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 20, // 20 attempts per 15 minutes
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    success: false,
+    message: 'Too many authentication attempts from this IP, please try again after 15 minutes.'
+  }
+});
+
+app.use('/api/', apiLimiter);
+app.use('/api/auth/login', authLimiter);
+app.use('/api/auth/register', authLimiter);
 
 // Allowed origins for CORS
 const allowedOrigins = [

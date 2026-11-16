@@ -26,9 +26,13 @@ const getCookieOptions = (expiresInMs = 7 * 24 * 60 * 60 * 1000) => {
  * Generate JWT and send via HttpOnly Cookie
  */
 const sendTokenResponse = (student, statusCode, res, message = '') => {
+  if (!process.env.JWT_SECRET) {
+    throw new Error('JWT_SECRET environment variable is not configured. Server cannot issue tokens.');
+  }
+
   const token = jwt.sign(
     { id: student._id },
-    process.env.JWT_SECRET || 'skillbridge_dev_secret',
+    process.env.JWT_SECRET,
     { expiresIn: '7d' }
   );
 
